@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	
 	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>Untitled Document</title>
+	<title>Jornadas</title>
 	<!-- InstanceEndEditable -->
 	
 	<!-- Icon on top -->
@@ -103,34 +103,998 @@
 		
 		<div class="container pt-4">
 			
+			<!-- Breadcrumb -->
 			<ul class="breadcrumb">
 				<li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
 				<li class="breadcrumb-item"><a href="../index_torneo.html">Torneo</a></li>
 				<li class="breadcrumb-item active">Jornadas</li>
 			</ul>
 			
-			<h2>Contenido de la página</h2>
-			<p>Aquí va:</p>
+			<!-- Jornada y fecha -->
+			<div class="p-3">
+				<h2 class="display-4"><strong>Jornada 3</strong></h2>
+				<h2 class="display-6">31 / Enero / 2022 <i class="far fa-calendar-alt"></i></h2>
+			</div>
 			
-			<ul>
-				<li>Un menu donde vienen las 11 jornadas</li>
-				<li>Jornadas anteriores</li>
-				<ul>
-					<li>Resultados mostrados en un acordeon talvez, con goleadores</li>
-				</ul>
-				<li>Jornada actual</li>
-				<ul>
-					<li>En primera plana, mostrando las tarjetas</li>
-				</ul>
-				<li>Jornadas futuras</li>
-				<ul>
-					<li>Deshabilitadas, pero ya hechas en el fondo</li>
-				</ul>
+			
+			<!-- Comienzan tarjetas partidos -->
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+			
+				<!-- Card #1 -->
+				<div class="col">
+					<div class="card h-100">
+
+						<!-- Header -->
+						<div class="card-header bg-primary text-white text-center">
+							<strong><big>Cancha 1 <br> 7:30pm</big></strong>
+						</div>
+
+						<!-- Body -->
+						<div class="card-body">
+
+							<!-- Camisas -->
+							<div class="d-flex">
+								<!-- Equipo #1 -->
+								<div class="p-2  text-center flex-grow-1">
+									<img src="../img/camisasJornada/infoGolosos.png" class="w-100" alt=""><br>
+								</div>
+								<!-- VS. -->
+								<div class="p-2  text-center align-self-center">
+									<strong>vs.</strong>
+								</div>
+								<!-- Equipo #2 -->
+								<div class="p-2  text-center flex-grow-1">
+									<img src="../img/camisasJornada/infoCerounos.png" class="w-100" alt=""><br>
+								</div>
+							</div>
+
+							<!-- Equipos -->
+							<!--<div class="row mx-1 mb-2">
+								<div class="col-6 text-center ">
+									<strong><big>Cerounos</big></strong>
+								</div>
+
+								<div class="col-6 text-center ">
+									<strong><big>Fuente Ovejuna</big></strong>
+								</div>
+							</div>-->
+
+							<!-- Posiciones -->
+							<div class="row mx-1 border-top border-bottom py-2">
+								<!-- equipo #1 -->
+								<div class="col-6 text-center">
+									<span class="text-warning">1º Lugar</span>
+								</div>
+								<!-- equipo #2 -->
+								<div class="col-6 text-center">
+									<span class="text-warning">6º Lugar</span>
+								</div>
+							</div>
+
+							<br>
+
+							<!-- Dropdown btn -->
+							<div class="text-center">
+								<button type="button" class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#partido1">
+									Ver detalles <i class="fas fa-caret-down"></i>
+								</button>
+							</div>
+							<!-- Dropdown info -->
+							<div id="partido1" class="collapse">
+
+								<br>
+								<div class="row">
+									<div class="col-6 text-left">
+										<!-- Jugadores eq #1 -->
+										<ul class="list-group list-group-flush">
+											<li class="list-group-item text-center"><small><strong>Gene 01</strong></small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+										</ul>
+									</div>
+									<div class="col-6 text-end">
+										<!-- Jugadores eq #2 -->
+										<ul class="list-group list-group-flush">
+											<li class="list-group-item text-center"><small><strong>Gene 94-96</strong></small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+										</ul>
+									</div>
+								</div>
+
+								<br>
+								<!-- Arbitro -->
+								<p class="text-center">
+									<small><u>Arbitro:</u><br>Juan Pérez</small>
+								</p>
+
+							</div>
+
+						</div>
+
+						<div class="card-footer">Footer</div>
+
+					</div>
+				</div>
+
+				<!-- Card #2 -->		
+				<div class="col">
+					<div class="card h-100">
+
+						<!-- Header -->
+						<div class="card-header bg-primary text-white text-center">
+							<strong><big>Cancha 2 <br> 7:30pm</big></strong>
+						</div>
+
+						<!-- Body -->
+						<div class="card-body">
+
+							<!-- Camisas -->
+							<div class="d-flex">
+								<!-- Equipo #1 -->
+								<div class="p-2  text-center flex-grow-1">
+									<img src="../img/camisasJornada/infoLeones.png" class="w-100" alt=""><br>
+								</div>
+								<!-- VS. -->
+								<div class="p-2  text-center align-self-center">
+									<strong>vs.</strong>
+								</div>
+								<!-- Equipo #2 -->
+								<div class="p-2  text-center flex-grow-1">
+									<img src="../img/camisasJornada/infoCloseFriends.png" class="w-100" alt=""><br>
+								</div>
+							</div>
+
+							<!-- Equipos -->
+							<!--<div class="row mx-1 mb-2">
+								<div class="col-6 text-center ">
+									<strong><big>Cerounos</big></strong>
+								</div>
+
+								<div class="col-6 text-center ">
+									<strong><big>Fuente Ovejuna</big></strong>
+								</div>
+							</div>-->
+
+							<!-- Posiciones -->
+							<div class="row mx-1 border-top border-bottom py-2">
+								<!-- equipo #1 -->
+								<div class="col-6 text-center">
+									<span class="text-warning">2º Lugar</span>
+								</div>
+								<!-- equipo #2 -->
+								<div class="col-6 text-center">
+									<span class="text-warning">7º Lugar</span>
+								</div>
+							</div>
+
+							<br>
+
+							<!-- Dropdown btn -->
+							<div class="text-center">
+								<button type="button" class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#partido2">
+									Ver detalles <i class="fas fa-caret-down"></i>
+								</button>
+							</div>
+							<!-- Dropdown info -->
+							<div id="partido2" class="collapse">
+
+								<br>
+								<div class="row">
+									<div class="col-6 text-left">
+										<!-- Jugadores eq #1 -->
+										<ul class="list-group list-group-flush">
+											<li class="list-group-item text-center"><small><strong>Gene 01</strong></small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+										</ul>
+									</div>
+									<div class="col-6 text-end">
+										<!-- Jugadores eq #2 -->
+										<ul class="list-group list-group-flush">
+											<li class="list-group-item text-center"><small><strong>Gene 94-96</strong></small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+										</ul>
+									</div>
+								</div>
+
+								<br>
+								<!-- Arbitro -->
+								<p class="text-center">
+									<small><u>Arbitro:</u><br>Juan Pérez</small>
+								</p>
+
+							</div>
+
+						</div>
+
+						<div class="card-footer">Footer</div>
+
+					</div>
+				</div>
+
+				<!-- Card #3 -->	
+				<div class="col">
+					<div class="card h-100">
+
+						<!-- Header -->
+						<div class="card-header bg-danger text-white text-center">
+							<strong><big>Cancha 1 <br> 8:30pm</big></strong>
+						</div>
+
+						<!-- Body -->
+						<div class="card-body">
+
+							<!-- Camisas -->
+							<div class="d-flex">
+								<!-- Equipo #1 -->
+								<div class="p-2  text-center flex-grow-1">
+									<img src="../img/camisasJornada/infoAtleticoSanPancho.png" class="w-100" alt=""><br>
+								</div>
+								<!-- VS. -->
+								<div class="p-2  text-center align-self-center">
+									<strong>vs.</strong>
+								</div>
+								<!-- Equipo #2 -->
+								<div class="p-2  text-center flex-grow-1">
+									<img src="../img/camisasJornada/infoStacy.png" class="w-100" alt=""><br>
+								</div>
+							</div>
+
+							<!-- Equipos -->
+							<!--<div class="row mx-1 mb-2">
+								<div class="col-6 text-center ">
+									<strong><big>Cerounos</big></strong>
+								</div>
+
+								<div class="col-6 text-center ">
+									<strong><big>Fuente Ovejuna</big></strong>
+								</div>
+							</div>-->
+
+							<!-- Posiciones -->
+							<div class="row mx-1 border-top border-bottom py-2">
+								<!-- equipo #1 -->
+								<div class="col-6 text-center">
+									<span class="text-warning">4º Lugar</span>
+								</div>
+								<!-- equipo #2 -->
+								<div class="col-6 text-center">
+									<span class="text-warning">3º Lugar</span>
+								</div>
+							</div>
+
+							<br>
+
+							<!-- Dropdown btn -->
+							<div class="text-center">
+								<button type="button" class="btn btn-outline-danger" data-bs-toggle="collapse" data-bs-target="#partido3">
+									Ver detalles <i class="fas fa-caret-down"></i>
+								</button>
+							</div>
+							<!-- Dropdown info -->
+							<div id="partido3" class="collapse">
+
+								<br>
+								<div class="row">
+									<div class="col-6 text-left">
+										<!-- Jugadores eq #1 -->
+										<ul class="list-group list-group-flush">
+											<li class="list-group-item text-center"><small><strong>Gene 01</strong></small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+										</ul>
+									</div>
+									<div class="col-6 text-end">
+										<!-- Jugadores eq #2 -->
+										<ul class="list-group list-group-flush">
+											<li class="list-group-item text-center"><small><strong>Gene 94-96</strong></small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+										</ul>
+									</div>
+								</div>
+
+								<br>
+								<!-- Arbitro -->
+								<p class="text-center">
+									<small><u>Arbitro:</u><br>Juan Pérez</small>
+								</p>
+
+							</div>
+
+						</div>
+
+						<div class="card-footer">Footer</div>
+
+					</div>
+				</div>
+
+				<!-- Card #4 -->
+				<div class="col">
+					<div class="card h-100">
+
+						<!-- Header -->
+						<div class="card-header bg-danger text-white text-center">
+							<strong><big>Cancha 2 <br> 8:30pm</big></strong>
+						</div>
+
+						<!-- Body -->
+						<div class="card-body">
+
+							<!-- Camisas -->
+							<div class="d-flex">
+								<!-- Equipo #1 -->
+								<div class="p-2  text-center flex-grow-1">
+									<img src="../img/camisasJornada/infoGalacticos.png" class="w-100" alt=""><br>
+								</div>
+								<!-- VS. -->
+								<div class="p-2  text-center align-self-center">
+									<strong>vs.</strong>
+								</div>
+								<!-- Equipo #2 -->
+								<div class="p-2  text-center flex-grow-1">
+									<img src="../img/camisasJornada/infoVikingos.png" class="w-100" alt=""><br>
+								</div>
+							</div>
+
+							<!-- Equipos -->
+							<!--<div class="row mx-1 mb-2">
+								<div class="col-6 text-center ">
+									<strong><big>Cerounos</big></strong>
+								</div>
+
+								<div class="col-6 text-center ">
+									<strong><big>Fuente Ovejuna</big></strong>
+								</div>
+							</div>-->
+
+							<!-- Posiciones -->
+							<div class="row mx-1 border-top border-bottom py-2">
+								<!-- equipo #1 -->
+								<div class="col-6 text-center">
+									<span class="text-warning">5º Lugar</span>
+								</div>
+								<!-- equipo #2 -->
+								<div class="col-6 text-center">
+									<span class="text-warning">12º Lugar</span>
+								</div>
+							</div>
+
+							<br>
+
+							<!-- Dropdown btn -->
+							<div class="text-center">
+								<button type="button" class="btn btn-outline-danger" data-bs-toggle="collapse" data-bs-target="#partido4">
+									Ver detalles <i class="fas fa-caret-down"></i>
+								</button>
+							</div>
+							<!-- Dropdown info -->
+							<div id="partido4" class="collapse">
+
+								<br>
+								<div class="row">
+									<div class="col-6 text-left">
+										<!-- Jugadores eq #1 -->
+										<ul class="list-group list-group-flush">
+											<li class="list-group-item text-center"><small><strong>Gene 01</strong></small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+										</ul>
+									</div>
+									<div class="col-6 text-end">
+										<!-- Jugadores eq #2 -->
+										<ul class="list-group list-group-flush">
+											<li class="list-group-item text-center"><small><strong>Gene 94-96</strong></small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+										</ul>
+									</div>
+								</div>
+
+								<br>
+								<!-- Arbitro -->
+								<p class="text-center">
+									<small><u>Arbitro:</u><br>Juan Pérez</small>
+								</p>
+
+							</div>
+
+						</div>
+
+						<div class="card-footer">Footer</div>
+
+					</div>
+				</div>
+
+				<!-- Card #5 -->
+				<div class="col">
+					<div class="card h-100">
+
+						<!-- Header -->
+						<div class="card-header bg-success text-white text-center">
+							<strong><big>Cancha 1 <br> 9:30pm</big></strong>
+						</div>
+
+						<!-- Body -->
+						<div class="card-body">
+
+							<!-- Camisas -->
+							<div class="d-flex">
+								<!-- Equipo #1 -->
+								<div class="p-2  text-center flex-grow-1">
+									<img src="../img/camisasJornada/infoFuenteOvejuna.png" class="w-100" alt=""><br>
+								</div>
+								<!-- VS. -->
+								<div class="p-2  text-center align-self-center">
+									<strong>vs.</strong>
+								</div>
+								<!-- Equipo #2 -->
+								<div class="p-2  text-center flex-grow-1">
+									<img src="../img/camisasJornada/infoLaRaza.png" class="w-100" alt=""><br>
+								</div>
+							</div>
+
+							<!-- Equipos -->
+							<!--<div class="row mx-1 mb-2">
+								<div class="col-6 text-center ">
+									<strong><big>Cerounos</big></strong>
+								</div>
+
+								<div class="col-6 text-center ">
+									<strong><big>Fuente Ovejuna</big></strong>
+								</div>
+							</div>-->
+
+							<!-- Posiciones -->
+							<div class="row mx-1 border-top border-bottom py-2">
+								<!-- equipo #1 -->
+								<div class="col-6 text-center">
+									<span class="text-warning">8º Lugar</span>
+								</div>
+								<!-- equipo #2 -->
+								<div class="col-6 text-center">
+									<span class="text-warning">9º Lugar</span>
+								</div>
+							</div>
+
+							<br>
+
+							<!-- Dropdown btn -->
+							<div class="text-center">
+								<button type="button" class="btn btn-outline-success" data-bs-toggle="collapse" data-bs-target="#partido5">
+									Ver detalles <i class="fas fa-caret-down"></i>
+								</button>
+							</div>
+							<!-- Dropdown info -->
+							<div id="partido5" class="collapse">
+
+								<br>
+								<div class="row">
+									<div class="col-6 text-left">
+										<!-- Jugadores eq #1 -->
+										<ul class="list-group list-group-flush">
+											<li class="list-group-item text-center"><small><strong>Gene 01</strong></small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+										</ul>
+									</div>
+									<div class="col-6 text-end">
+										<!-- Jugadores eq #2 -->
+										<ul class="list-group list-group-flush">
+											<li class="list-group-item text-center"><small><strong>Gene 94-96</strong></small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+										</ul>
+									</div>
+								</div>
+
+								<br>
+								<!-- Arbitro -->
+								<p class="text-center">
+									<small><u>Arbitro:</u><br>Juan Pérez</small>
+								</p>
+
+							</div>
+
+						</div>
+
+						<div class="card-footer">Footer</div>
+
+					</div>
+				</div>
+
+				<!-- Card #6 -->		
+				<div class="col">
+					<div class="card h-100">
+
+						<!-- Header -->
+						<div class="card-header bg-success text-white text-center">
+							<strong><big>Cancha 2 <br> 9:30pm</big></strong>
+						</div>
+
+						<!-- Body -->
+						<div class="card-body">
+
+							<!-- Camisas -->
+							<div class="d-flex">
+								<!-- Equipo #1 -->
+								<div class="p-2  text-center flex-grow-1">
+									<img src="../img/camisasJornada/infoLeyendas.png" class="w-100" alt=""><br>
+								</div>
+								<!-- VS. -->
+								<div class="p-2  text-center align-self-center">
+									<strong>vs.</strong>
+								</div>
+								<!-- Equipo #2 -->
+								<div class="p-2  text-center flex-grow-1">
+									<img src="../img/camisasJornada/infoElEquipe.png" class="w-100" alt=""><br>
+								</div>
+							</div>
+
+							<!-- Equipos -->
+							<!--<div class="row mx-1 mb-2">
+								<div class="col-6 text-center ">
+									<strong><big>Cerounos</big></strong>
+								</div>
+
+								<div class="col-6 text-center ">
+									<strong><big>Fuente Ovejuna</big></strong>
+								</div>
+							</div>-->
+
+							<!-- Posiciones -->
+							<div class="row mx-1 border-top border-bottom py-2">
+								<!-- equipo #1 -->
+								<div class="col-6 text-center">
+									<span class="text-warning">10º Lugar</span>
+								</div>
+								<!-- equipo #2 -->
+								<div class="col-6 text-center">
+									<span class="text-warning">11º Lugar</span>
+								</div>
+							</div>
+
+							<br>
+
+							<!-- Dropdown btn -->
+							<div class="text-center">
+								<button type="button" class="btn btn-outline-success" data-bs-toggle="collapse" data-bs-target="#partido6">
+									Ver detalles <i class="fas fa-caret-down"></i>
+								</button>
+							</div>
+							<!-- Dropdown info -->
+							<div id="partido6" class="collapse">
+
+								<br>
+								<div class="row">
+									<div class="col-6 text-left">
+										<!-- Jugadores eq #1 -->
+										<ul class="list-group list-group-flush">
+											<li class="list-group-item text-center"><small><strong>Gene 01</strong></small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+										</ul>
+									</div>
+									<div class="col-6 text-end">
+										<!-- Jugadores eq #2 -->
+										<ul class="list-group list-group-flush">
+											<li class="list-group-item text-center"><small><strong>Gene 94-96</strong></small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											<li class="list-group-item"><small>Nombre Apellido</small></li>
+										</ul>
+									</div>
+								</div>
+
+								<br>
+								<!-- Arbitro -->
+								<p class="text-center">
+									<small><u>Arbitro:</u><br>Juan Pérez</small>
+								</p>
+
+							</div>
+
+						</div>
+
+						<div class="card-footer">Footer</div>
+
+					</div>
+				</div>
+					
+			</div>
+			
+			
+			<!-- Titulo Jornadas Anteriores -->
+			<div class="p-3 mt-4">
+				<h2 class="display-4"><strong>Jornadas Anteriores</strong></h2>
+			</div>
+			
+			<!-- Jornada Anteriores MENU -->			
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				
+				<!-- J1 -->
+				<li class="nav-item">
+					<a class="nav-link active" data-bs-toggle="tab" href="#j1">J1</a>
+				</li>
+				
+				<!-- J2 -->
+				<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="tab" href="#j2">J2</a>
+				</li>
+				
+				<!-- J3 -->
+				<!--<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="tab" href="#j3">J3</a>
+				</li>-->
+				
+				<!-- J4 -->
+				<!--<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="tab" href="#j4">J4</a>
+				</li>-->
+				
+				<!-- J5 -->
+				<!--<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="tab" href="#j5">J5</a>
+				</li>-->
+				
+				<!-- J6 -->
+				<!--<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="tab" href="#j6">J6</a>
+				</li>-->
+				
+				<!-- J7 -->
+				<!--<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="tab" href="#j7">J7</a>
+				</li>-->
+				
+				<!-- J8 -->
+				<!--<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="tab" href="#j8">J8</a>
+				</li>-->
+				
+				<!-- J9 -->
+				<!--<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="tab" href="#j9">J9</a>
+				</li>-->
+				
+				<!-- J10 -->
+				<!--<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="tab" href="#j10">J10</a>
+				</li>-->
+				
+				<!-- J11 -->
+				<!--<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="tab" href="#j11">J11</a>
+				</li>-->
+				
 			</ul>
+
+			<!-- Jornadas Anteriores CONTENIDO -->
+			<!-- Tab panes -->
+			<div class="tab-content border-bottom border-start border-end bg-light p-3">
+				
+				<!-- J1 -->
+				<div id="j1" class="container tab-pane active"><br>
+					
+					<h3>Jornada 1</h3>
+					<div id="accordion">
+						
+						<!-- Partido #1 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+									<i class="fas fa-caret-down pe-2"></i> 7:30pm - Gol Osos 4 - 2 El Equipe
+								</a>
+							</div>
+							<div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Partido #2 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+									<i class="fas fa-caret-down pe-2"></i> 7:30pm - Leyendas 4 - 2 Fuente Ovejuna
+								</a>
+							</div>
+							<div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Partido #3 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+									<i class="fas fa-caret-down pe-2"></i> 8:30pm - La Raza - Vikingos F.C.
+								</a>
+							</div>
+							<div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Partido #4 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+									<i class="fas fa-caret-down pe-2"></i> 8:30pm - Galácticos 1 - 2 Close Friends F.C.
+								</a>
+							</div>
+							<div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Partido #5 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+									<i class="fas fa-caret-down pe-2"></i> 9:30pm - Leones F.C. 3 - 2 Stacy F.C.
+								</a>
+							</div>
+							<div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Partido #6 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix">
+									<i class="fas fa-caret-down pe-2"></i> 9:30pm - Atlético San Pancho 1 - 4 Cerounos F.C.
+								</a>
+							</div>
+							<div id="collapseSix" class="collapse" data-bs-parent="#accordion">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<!-- J2 -->
+				<div id="j2" class="container tab-pane fade"><br>
+					
+					<h3>Jornada 2</h3>
+					<div id="accordion2">
+						
+						<!-- Partido #1 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="btn" data-bs-toggle="collapse" href="#collapseOne2">
+									<i class="fas fa-caret-down pe-2"></i> 7:30pm - Gol Osos 4 - 2 El Equipe
+								</a>
+							</div>
+							<div id="collapseOne2" class="collapse show" data-bs-parent="#accordion2">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Partido #2 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo2">
+									<i class="fas fa-caret-down pe-2"></i> 7:30pm - Leyendas 4 - 2 Fuente Ovejuna
+								</a>
+							</div>
+							<div id="collapseTwo2" class="collapse" data-bs-parent="#accordion2">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Partido #3 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree2">
+									<i class="fas fa-caret-down pe-2"></i> 8:30pm - La Raza - Vikingos F.C.
+								</a>
+							</div>
+							<div id="collapseThree2" class="collapse" data-bs-parent="#accordion2">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Partido #4 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour2">
+									<i class="fas fa-caret-down pe-2"></i> 8:30pm - Galácticos 1 - 2 Close Friends F.C.
+								</a>
+							</div>
+							<div id="collapseFour2" class="collapse" data-bs-parent="#accordion2">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Partido #5 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive2">
+									<i class="fas fa-caret-down pe-2"></i> 9:30pm - Leones F.C. 3 - 2 Stacy F.C.
+								</a>
+							</div>
+							<div id="collapseFive2" class="collapse" data-bs-parent="#accordion2">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Partido #6 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix2">
+									<i class="fas fa-caret-down pe-2"></i> 9:30pm - Atlético San Pancho 1 - 4 Cerounos F.C.
+								</a>
+							</div>
+							<div id="collapseSix2" class="collapse" data-bs-parent="#accordion2">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				
+				</div>
+				
+				<!-- J3 -->
+				<div id="j3" class="container tab-pane fade"><br>
+					<h3>Jornada 3</h3>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+				</div>
+			</div>
 			
-		</div>  
+		</div>
+			 
 		
 	  <!-- InstanceEndEditable -->
+		
+		<div class="container-fluid bg-light mt-5 px-0">
+			
+			<div class="row px-0 mx-0">
+				
+				<div class="col-12 col-md-4 text-center text-secondary py-4">
+					<h3>Coordinador:</h3>
+					<h6>Miguel Camacho - 81 1320 4457</h6>
+				</div>
+				
+				<div class="col-12 col-sm-6 col-md-4 text-center text-secondary py-4 border-top border-end border-start">
+					<h3>Leer Reglamento</h3>
+					<button type="button" class="btn btn-outline-secondary w-50">Reglamento</button>
+				</div>
+				
+				<div class="col-12 col-sm-6 col-md-4 text-center text-secondary py-4 border-top">
+					<h3>Síguenos en:</h3>
+					<a href="https://www.instagram.com/exliceosmty/" target="_blank" class="btn btn-outline-secondary">
+						<i class="fa fa-instagram"></i> Instagram
+					</a>
+				</div>
+				
+			</div>
+			
+		</div>
 		
 </div>
 	
