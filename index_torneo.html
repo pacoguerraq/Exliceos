@@ -69,15 +69,17 @@
 							<a class="nav-link dropdown-toggle w-100" href="#" role="button" data-bs-toggle="dropdown">
 								<i class="fas fa-futbol" style="color: #7B7B7B"></i> Torneo
 							</a>
+							<!-- InstanceBeginEditable name="dropdown nav" -->
 							<ul class="dropdown-menu dropdown-menu-end text-center">
 								<li><h5 class="dropdown-header">Temporada Ene-Jun '22</h5></li>
-								<li><a class="dropdown-item border-bottom" href="index_torneo.html"><strong>Inicio</strong></a></li>
+								<li><a class="dropdown-item border-bottom active" href="index_torneo.html"><strong>Inicio</strong></a></li>
 								<li><a class="dropdown-item border-bottom" href="torneo/tabla.html">Tabla general</a></li>
 								<li><a class="dropdown-item border-bottom" href="torneo/goleo.html">Goleo</a></li>
 								<li><a class="dropdown-item border-bottom" href="torneo/tarjetas.html">Tarjetas</a></li>
 								<li><a class="dropdown-item border-bottom" href="torneo/jornadas.html">Jornadas</a></li>
 								<li><a class="dropdown-item" href="torneo/fotos.html">Fotos</a></li>
 							</ul>
+							<!-- InstanceEndEditable -->
 						</li>
 						<br>
 						<li class="nav-item border rounded-3 me-3 principal">
@@ -101,8 +103,53 @@
 		
 		<!-- InstanceBeginEditable name="content" -->
 		
+		<!-- Carousel -->
+		<div id="demo2" class="carousel slide" data-bs-ride="carousel">
+
+			<!-- Indicators/dots -->
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+				<button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+				<button type="button" data-bs-target="#demo2" data-bs-slide-to="2"></button>
+			</div>
+
+			<!-- The slideshow/carousel -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/carruselTorneo1.jpg" alt="Carrusel 1" class="d-block" style="width:100%; opacity: 40%;">
+					<!--<div class="carousel-caption">
+						<h3>Los Angeles</h3>
+						<p>We had such a great time in LA!</p>
+					</div>-->
+				</div>
+				<div class="carousel-item">
+					<img src="img/carruselTorneo2.jpg" alt="Carrusel 2" class="d-block" style="width:100%; opacity: 40%;">
+					<!--<div class="carousel-caption">
+						<h3>Los Angeles</h3>
+						<p>We had such a great time in LA!</p>
+					</div>-->
+				</div>
+				<div class="carousel-item">
+					<img src="img/carruselTorneo3.jpg" alt="Carrusel 3" class="d-block" style="width:100%; opacity: 40%;">
+					<!--<div class="carousel-caption">
+						<h3>Los Angeles</h3>
+						<p>We had such a great time in LA!</p>
+					</div>--> 
+				</div>
+			</div>
+
+			<!-- Left and right controls/icons -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</button>
+		</div>
+		
 		<div class="container pt-4">
 			
+			<!-- breadcrumb -->
 			<ul class="breadcrumb">
 				<li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
 				<li class="breadcrumb-item active">Torneo</li>
@@ -114,9 +161,7 @@
 				<li>En primera plana la página de la jornada actual</li>
 				<li>Tabla general</li>
 				<li>Jornadas anteriores</li>
-				<li>Información de contacto</li>
-				<li>Redes sociales</li>
-				<li>Opción de lectura/descarga de reglamento</li>
+				<li>Información de contacto</li>			
 			</ul>
 			
 			<br>
@@ -131,6 +176,8 @@
 		</div>   
 		
 		<!-- InstanceEndEditable -->
+		
+		<!-- InstanceBeginEditable name="Footer" -->
 		
 		<div class="container-fluid bg-light mt-5 px-0">
 			
@@ -158,6 +205,8 @@
 			</div>
 			
 		</div>
+		
+		<!-- InstanceEndEditable -->
 		
 </div>
 	

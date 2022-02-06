@@ -69,6 +69,7 @@
 							<a class="nav-link dropdown-toggle w-100" href="#" role="button" data-bs-toggle="dropdown">
 								<i class="fas fa-futbol" style="color: #7B7B7B"></i> Torneo
 							</a>
+							<!-- TemplateBeginEditable name="dropdown nav" -->
 							<ul class="dropdown-menu dropdown-menu-end text-center">
 								<li><h5 class="dropdown-header">Temporada Ene-Jun '22</h5></li>
 								<li><a class="dropdown-item border-bottom" href="../index_torneo.html"><strong>Inicio</strong></a></li>
@@ -78,6 +79,7 @@
 								<li><a class="dropdown-item border-bottom" href="../torneo/jornadas.html">Jornadas</a></li>
 								<li><a class="dropdown-item" href="../torneo/fotos.html">Fotos</a></li>
 							</ul>
+							<!-- TemplateEndEditable -->
 						</li>
 						<br>
 						<li class="nav-item border rounded-3 me-3 principal">
@@ -116,6 +118,8 @@
 		
 	  	<!-- TemplateEndEditable -->
 		
+		<!-- TemplateBeginEditable name="Footer" -->
+		
 		<div class="container-fluid bg-light mt-5 px-0">
 			
 			<div class="row px-0 mx-0">
@@ -142,6 +146,8 @@
 			</div>
 			
 		</div>
+		
+		<!-- TemplateEndEditable -->
 		
 </div>
 	
