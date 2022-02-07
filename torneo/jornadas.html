@@ -40,7 +40,7 @@
 	</style>
 	
 	<!-- InstanceBeginEditable name="head" -->
-	
+	<script type="text/javascript" src="../js/jornadas.js"></script>
 	<!-- InstanceEndEditable -->
 </head>
 
@@ -138,7 +138,7 @@
 							<div class="d-flex">
 								<!-- Equipo #1 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoGolosos.png" class="w-100" alt=""><br>
+									<img src="../img/camisasJornada/infoGolosos.png" class="w-100" alt="" id="camisa_1a"><br>
 								</div>
 								<!-- VS. -->
 								<div class="p-2  text-center align-self-center">
@@ -146,7 +146,7 @@
 								</div>
 								<!-- Equipo #2 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoCerounos.png" class="w-100" alt=""><br>
+									<img src="../img/camisasJornada/infoCerounos.png" class="w-100" alt="" id="camisa_1b"><br>
 								</div>
 							</div>
 
@@ -177,7 +177,7 @@
 
 							<!-- Dropdown btn -->
 							<div class="text-center">
-								<button type="button" class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#partido1">
+								<button type="button" class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#partido1" onClick="mostrarNombres(1, 'lista_1a', 'lista_1b', 'camisa_1a', 'camisa_1b')">
 									Ver detalles <i class="fas fa-caret-down"></i>
 								</button>
 							</div>
@@ -188,32 +188,16 @@
 								<div class="row">
 									<div class="col-6 text-left">
 										<!-- Jugadores eq #1 -->
-										<ul class="list-group list-group-flush">
+										<ul class="list-group list-group-flush" id="lista_1a">
 											<li class="list-group-item text-center"><small><strong>Gene 01</strong></small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											
 										</ul>
 									</div>
 									<div class="col-6 text-end">
 										<!-- Jugadores eq #2 -->
-										<ul class="list-group list-group-flush">
+										<ul class="list-group list-group-flush" id="lista_1b">
 											<li class="list-group-item text-center"><small><strong>Gene 94-96</strong></small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											
 										</ul>
 									</div>
 								</div>
@@ -249,7 +233,7 @@
 							<div class="d-flex">
 								<!-- Equipo #1 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoLeones.png" class="w-100" alt=""><br>
+									<img src="../img/camisasJornada/infoLeones.png" class="w-100" alt="" id="camisa_2a"><br>
 								</div>
 								<!-- VS. -->
 								<div class="p-2  text-center align-self-center">
@@ -257,7 +241,7 @@
 								</div>
 								<!-- Equipo #2 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoCloseFriends.png" class="w-100" alt=""><br>
+									<img src="../img/camisasJornada/infoCloseFriends.png" class="w-100" alt="" id="camisa_2b"><br>
 								</div>
 							</div>
 
@@ -288,7 +272,7 @@
 
 							<!-- Dropdown btn -->
 							<div class="text-center">
-								<button type="button" class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#partido2">
+								<button type="button" class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#partido2" onClick="mostrarNombres(2, 'lista_2a', 'lista_2b', 'camisa_2a', 'camisa_2b')">
 									Ver detalles <i class="fas fa-caret-down"></i>
 								</button>
 							</div>
@@ -299,32 +283,16 @@
 								<div class="row">
 									<div class="col-6 text-left">
 										<!-- Jugadores eq #1 -->
-										<ul class="list-group list-group-flush">
+										<ul class="list-group list-group-flush" id="lista_2a">
 											<li class="list-group-item text-center"><small><strong>Gene 01</strong></small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											
 										</ul>
 									</div>
 									<div class="col-6 text-end">
 										<!-- Jugadores eq #2 -->
-										<ul class="list-group list-group-flush">
+										<ul class="list-group list-group-flush" id="lista_2b">
 											<li class="list-group-item text-center"><small><strong>Gene 94-96</strong></small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
+
 										</ul>
 									</div>
 								</div>
@@ -360,7 +328,7 @@
 							<div class="d-flex">
 								<!-- Equipo #1 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoAtleticoSanPancho.png" class="w-100" alt=""><br>
+									<img src="../img/camisasJornada/infoAtleticoSanPancho.png" class="w-100" alt="" id="camisa_3a"><br>
 								</div>
 								<!-- VS. -->
 								<div class="p-2  text-center align-self-center">
@@ -368,7 +336,7 @@
 								</div>
 								<!-- Equipo #2 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoStacy.png" class="w-100" alt=""><br>
+									<img src="../img/camisasJornada/infoStacy.png" class="w-100" alt="" id="camisa_3b"><br>
 								</div>
 							</div>
 
@@ -399,7 +367,7 @@
 
 							<!-- Dropdown btn -->
 							<div class="text-center">
-								<button type="button" class="btn btn-outline-danger" data-bs-toggle="collapse" data-bs-target="#partido3">
+								<button type="button" class="btn btn-outline-danger" data-bs-toggle="collapse" data-bs-target="#partido3" onClick="mostrarNombres(3, 'lista_3a', 'lista_3b', 'camisa_3a', 'camisa_3b')">
 									Ver detalles <i class="fas fa-caret-down"></i>
 								</button>
 							</div>
@@ -410,32 +378,16 @@
 								<div class="row">
 									<div class="col-6 text-left">
 										<!-- Jugadores eq #1 -->
-										<ul class="list-group list-group-flush">
+										<ul class="list-group list-group-flush" id="lista_3a">
 											<li class="list-group-item text-center"><small><strong>Gene 01</strong></small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
+											
 										</ul>
 									</div>
 									<div class="col-6 text-end">
 										<!-- Jugadores eq #2 -->
-										<ul class="list-group list-group-flush">
+										<ul class="list-group list-group-flush" id="lista_3b">
 											<li class="list-group-item text-center"><small><strong>Gene 94-96</strong></small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
+
 										</ul>
 									</div>
 								</div>
@@ -471,7 +423,7 @@
 							<div class="d-flex">
 								<!-- Equipo #1 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoGalacticos.png" class="w-100" alt=""><br>
+									<img src="../img/camisasJornada/infoGalacticos.png" class="w-100" alt="" id="camisa_4a"><br>
 								</div>
 								<!-- VS. -->
 								<div class="p-2  text-center align-self-center">
@@ -479,7 +431,7 @@
 								</div>
 								<!-- Equipo #2 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoVikingos.png" class="w-100" alt=""><br>
+									<img src="../img/camisasJornada/infoVikingos.png" class="w-100" alt="" id="camisa_4b"><br>
 								</div>
 							</div>
 
@@ -510,7 +462,7 @@
 
 							<!-- Dropdown btn -->
 							<div class="text-center">
-								<button type="button" class="btn btn-outline-danger" data-bs-toggle="collapse" data-bs-target="#partido4">
+								<button type="button" class="btn btn-outline-danger" data-bs-toggle="collapse" data-bs-target="#partido4" onClick="mostrarNombres(4, 'lista_4a', 'lista_4b', 'camisa_4a', 'camisa_4b')">
 									Ver detalles <i class="fas fa-caret-down"></i>
 								</button>
 							</div>
@@ -521,32 +473,16 @@
 								<div class="row">
 									<div class="col-6 text-left">
 										<!-- Jugadores eq #1 -->
-										<ul class="list-group list-group-flush">
+										<ul class="list-group list-group-flush" id="lista_4a">
 											<li class="list-group-item text-center"><small><strong>Gene 01</strong></small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
+
 										</ul>
 									</div>
 									<div class="col-6 text-end">
 										<!-- Jugadores eq #2 -->
-										<ul class="list-group list-group-flush">
+										<ul class="list-group list-group-flush" id="lista_4b">
 											<li class="list-group-item text-center"><small><strong>Gene 94-96</strong></small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
+
 										</ul>
 									</div>
 								</div>
@@ -582,7 +518,7 @@
 							<div class="d-flex">
 								<!-- Equipo #1 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoFuenteOvejuna.png" class="w-100" alt=""><br>
+									<img src="../img/camisasJornada/infoFuenteOvejuna.png" class="w-100" alt="" id="camisa_5a"><br>
 								</div>
 								<!-- VS. -->
 								<div class="p-2  text-center align-self-center">
@@ -590,7 +526,7 @@
 								</div>
 								<!-- Equipo #2 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoLaRaza.png" class="w-100" alt=""><br>
+									<img src="../img/camisasJornada/infoLaRaza.png" class="w-100" alt="" id="camisa_5b"><br>
 								</div>
 							</div>
 
@@ -621,7 +557,7 @@
 
 							<!-- Dropdown btn -->
 							<div class="text-center">
-								<button type="button" class="btn btn-outline-success" data-bs-toggle="collapse" data-bs-target="#partido5">
+								<button type="button" class="btn btn-outline-success" data-bs-toggle="collapse" data-bs-target="#partido5" onClick="mostrarNombres(5, 'lista_5a', 'lista_5b', 'camisa_5a', 'camisa_5b')">
 									Ver detalles <i class="fas fa-caret-down"></i>
 								</button>
 							</div>
@@ -632,32 +568,16 @@
 								<div class="row">
 									<div class="col-6 text-left">
 										<!-- Jugadores eq #1 -->
-										<ul class="list-group list-group-flush">
+										<ul class="list-group list-group-flush" id="lista_5a">
 											<li class="list-group-item text-center"><small><strong>Gene 01</strong></small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
+
 										</ul>
 									</div>
 									<div class="col-6 text-end">
 										<!-- Jugadores eq #2 -->
-										<ul class="list-group list-group-flush">
+										<ul class="list-group list-group-flush" id="lista_5b">
 											<li class="list-group-item text-center"><small><strong>Gene 94-96</strong></small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
+
 										</ul>
 									</div>
 								</div>
@@ -693,7 +613,7 @@
 							<div class="d-flex">
 								<!-- Equipo #1 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoLeyendas.png" class="w-100" alt=""><br>
+									<img src="../img/camisasJornada/infoLeyendas.png" class="w-100" alt="" id="camisa_6a"><br>
 								</div>
 								<!-- VS. -->
 								<div class="p-2  text-center align-self-center">
@@ -701,7 +621,7 @@
 								</div>
 								<!-- Equipo #2 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoElEquipe.png" class="w-100" alt=""><br>
+									<img src="../img/camisasJornada/infoElEquipe.png" class="w-100" alt="" id="camisa_6b"><br>
 								</div>
 							</div>
 
@@ -732,7 +652,7 @@
 
 							<!-- Dropdown btn -->
 							<div class="text-center">
-								<button type="button" class="btn btn-outline-success" data-bs-toggle="collapse" data-bs-target="#partido6">
+								<button type="button" class="btn btn-outline-success" data-bs-toggle="collapse" data-bs-target="#partido6" onClick="mostrarNombres(6, 'lista_6a', 'lista_6b', 'camisa_6a', 'camisa_6b')">
 									Ver detalles <i class="fas fa-caret-down"></i>
 								</button>
 							</div>
@@ -743,32 +663,16 @@
 								<div class="row">
 									<div class="col-6 text-left">
 										<!-- Jugadores eq #1 -->
-										<ul class="list-group list-group-flush">
+										<ul class="list-group list-group-flush" id="lista_6a">
 											<li class="list-group-item text-center"><small><strong>Gene 01</strong></small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
+
 										</ul>
 									</div>
 									<div class="col-6 text-end">
 										<!-- Jugadores eq #2 -->
-										<ul class="list-group list-group-flush">
+										<ul class="list-group list-group-flush" id="lista_6b">
 											<li class="list-group-item text-center"><small><strong>Gene 94-96</strong></small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
-											<li class="list-group-item"><small>Nombre Apellido</small></li>
+
 										</ul>
 									</div>
 								</div>

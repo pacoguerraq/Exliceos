@@ -40,7 +40,7 @@
 	</style>
 	
 	<!-- InstanceBeginEditable name="head" -->
-	
+	<script type="text/javascript" src="../js/goleo.js"></script>
 	<!-- InstanceEndEditable -->
 </head>
 
@@ -115,7 +115,7 @@
 			<!-- Titulo y fecha -->
 			<div class="p-3">
 				<h2 class="display-4"><strong>Goleo</strong></h2>
-				<h2 class="display-6">Jornada 2 <i class="far fa-calendar-alt"></i></h2>
+				<h2 class="display-6">Jornada <span id="jornadaTitulo">2</span> <i class="far fa-calendar-alt"></i></h2>
 			</div> 
 			
 			<!-- Tarjeta Goleador -->
@@ -128,15 +128,15 @@
 				<div class="row">
 					<!-- Camisa -->
 					<div class="d-none d-sm-block col-sm-6">
-						<img src="../img/camisas/cerounos.png" class="img-fluid p-3 w-100 mx-auto d-block" style="max-width: 200px" alt="camisa goleador">
+						<img src="../img/camisas/cerounos.png" onload="cardGoleador()" class="img-fluid p-3 mx-auto d-block" style="max-height: 168px" alt="camisa goleador" id="camisaCard">
 					</div>
 					
 					<!-- Texto -->
 					<div class="col-12 col-sm-6">
 						<div class="card-body">
-							<h3 class="card-title text-center"><strong><big><span>Nombre del goleador</span></big></strong></h3>
-							<p class="card-text text-center"><em><span>Equipo</span></em></p>
-							<p class="card-text text-center"><span>X</span> goles en <span>Y</span> jornadas.</p>
+							<h3 class="card-title text-center"><strong><big><span id="nombreCard">Nombre del goleador</span></big></strong></h3>
+							<p class="card-text text-center"><em><span id="equipoCard">Equipo</span></em></p>
+							<p class="card-text text-center"><span id="golesCard">X</span> goles en <span id="jornadaCard">Y</span> jornadas.</p>
 						</div>
 					</div>
 					
@@ -166,9 +166,9 @@
 						<!-- 1º Lugar -->
 						<tr>
 							<th scope="row">1</th>						<!-- Posición -->
-							<td>Paco Guerra</td> 						<!-- Jugador -->
-							<td>Cerounos F.C.</td> 						<!-- Equipo -->
-							<td>3</td> 									<!-- Goles -->
+							<td id="nombreTabla">Paco Guerra</td> 						<!-- Jugador -->
+							<td id="equipoTabla">Cerounos F.C.</td> 						<!-- Equipo -->
+							<td id="golesTabla">3</td> 									<!-- Goles -->
 						</tr>
 						
 						<!-- 2º Lugar -->
