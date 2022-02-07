@@ -41,14 +41,6 @@
 	
 	<!-- InstanceBeginEditable name="head" -->
 	<script type="text/javascript" src="../js/jornadas.js"></script>
-	
-	<style>
-	
-		td:nth-child(2n) {
-			background-color: #D0D0D0;
-		}
-		
-	</style>
 	<!-- InstanceEndEditable -->
 </head>
 
@@ -736,105 +728,104 @@
 
 			<!-- Jornadas Anteriores CONTENIDO -->
 			<!-- Tab panes -->
-			<div class="tab-content border-bottom border-start border-end bg-light p-2">
+			<div class="tab-content border-bottom border-start border-end bg-light p-3">
 				
 				<!-- J1 -->
 				<div id="j1" class="container tab-pane active"><br>
 					
-					<h3 class="display-6 px-5">Jornada 1</h3>
-					
-					<br>
-					<table class="table text-center" style="width: 97%; margin: auto;">
-
-						<!-- Body -->
-						<tbody>
-							
-							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">7:30 PM</th>
-							</tr>
-
-							<!-- 7:30 Partido #1 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Gol Osos</td>	
-								<td class="align-middle">4</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">El Equipe</td>
-							</tr>
-
-							<!-- 7:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Leyendas</td>	
-								<td class="align-middle">4</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">Fuente Ovejuna F.C.</td>
-							</tr>
-							
-							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">8:30 PM</th>
-							</tr>
-
-							<!-- 8:30 Partido #1 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">La Raza</td>	
-								<td class="align-middle">-</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">-</td> 
-								<td class="align-middle" style="width: 40%">Vikingos F.C.</td>
-							</tr>
-
-							<!-- 8:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Galácticos</td>	
-								<td class="align-middle">1</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">Close Friends F.C.</td>
-							</tr>
-							
-							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">9:30 PM</th>
-							</tr>
-
-							<!-- 9:30 Partido #1 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Leones F.C.</td>	
-								<td class="align-middle">3</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">Stacy F.C.</td>
-							</tr>
-
-							<!-- 9:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Atlético San Pancho</td>	
-								<td class="align-middle">1</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">4</td> 
-								<td class="align-middle" style="width: 40%">Cerounos F.C</td>
-							</tr>
-
-
-						</tbody>
-
-					</table>
-
-					<br>
-
-					<!-- Info abajo de la tabla -->
-					<div class="row">
-
-						<div class="col-12 col-sm-8">
-
+					<h3>Jornada 1</h3>
+					<div id="accordion">
+						
+						<!-- Partido #1 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+									<i class="fas fa-caret-down pe-2"></i> 7:30pm - Gol Osos 4 - 2 El Equipe
+								</a>
+							</div>
+							<div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
 						</div>
-
-						<div class="d-none d-sm-block col-sm-4 text-center">
-
-							<img src="../img/logos/logoExliceos.png" alt="Logo exliceos" height="55">
-
+						
+						<!-- Partido #2 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+									<i class="fas fa-caret-down pe-2"></i> 7:30pm - Leyendas 4 - 2 Fuente Ovejuna
+								</a>
+							</div>
+							<div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
 						</div>
-
+						
+						<!-- Partido #3 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+									<i class="fas fa-caret-down pe-2"></i> 8:30pm - La Raza - Vikingos F.C.
+								</a>
+							</div>
+							<div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Partido #4 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+									<i class="fas fa-caret-down pe-2"></i> 8:30pm - Galácticos 1 - 2 Close Friends F.C.
+								</a>
+							</div>
+							<div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Partido #5 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+									<i class="fas fa-caret-down pe-2"></i> 9:30pm - Leones F.C. 3 - 2 Stacy F.C.
+								</a>
+							</div>
+							<div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Partido #6 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix">
+									<i class="fas fa-caret-down pe-2"></i> 9:30pm - Atlético San Pancho 1 - 4 Cerounos F.C.
+								</a>
+							</div>
+							<div id="collapseSix" class="collapse" data-bs-parent="#accordion">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
 					</div>
 					
 				</div>
@@ -842,102 +833,100 @@
 				<!-- J2 -->
 				<div id="j2" class="container tab-pane fade"><br>
 					
-					<h3 class="display-6 px-5">Jornada 1</h3>
-					
-					<br>
-					<table class="table text-center" style="width: 90%; margin: auto;">
-
-						<!-- Body -->
-						<tbody>
-							
-							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">7:30 PM</th>
-							</tr>
-
-							<!-- 7:30 Partido #1 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Cerounos</td>	
-								<td class="align-middle">3</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">Atlético San Pancho</td>
-							</tr>
-
-							<!-- 7:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Cerounos</td>	
-								<td class="align-middle">3</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">Atlético San Pancho</td>
-							</tr>
-							
-							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">8:30 PM</th>
-							</tr>
-
-							<!-- 8:30 Partido #1 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Cerounos</td>	
-								<td class="align-middle">3</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">Atlético San Pancho</td>
-							</tr>
-
-							<!-- 8:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Cerounos</td>	
-								<td class="align-middle">3</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">Atlético San Pancho</td>
-							</tr>
-							
-							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">9:30 PM</th>
-							</tr>
-
-							<!-- 9:30 Partido #1 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Cerounos</td>	
-								<td class="align-middle">3</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">Atlético San Pancho</td>
-							</tr>
-
-							<!-- 9:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Cerounos</td>	
-								<td class="align-middle">3</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">Atlético San Pancho</td>
-							</tr>
-
-
-						</tbody>
-
-					</table>
-
-					<br>
-
-					<!-- Info abajo de la tabla -->
-					<div class="row">
-
-						<div class="col-12 col-sm-8">
-
+					<h3>Jornada 2</h3>
+					<div id="accordion2">
+						
+						<!-- Partido #1 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="btn" data-bs-toggle="collapse" href="#collapseOne2">
+									<i class="fas fa-caret-down pe-2"></i> 7:30pm - Gol Osos 4 - 2 El Equipe
+								</a>
+							</div>
+							<div id="collapseOne2" class="collapse show" data-bs-parent="#accordion2">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
 						</div>
-
-						<div class="d-none d-sm-block col-sm-4 text-center">
-
-							<img src="../img/logos/logoExliceos.png" alt="Logo exliceos" height="55">
-
+						
+						<!-- Partido #2 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo2">
+									<i class="fas fa-caret-down pe-2"></i> 7:30pm - Leyendas 4 - 2 Fuente Ovejuna
+								</a>
+							</div>
+							<div id="collapseTwo2" class="collapse" data-bs-parent="#accordion2">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
 						</div>
-
+						
+						<!-- Partido #3 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree2">
+									<i class="fas fa-caret-down pe-2"></i> 8:30pm - La Raza - Vikingos F.C.
+								</a>
+							</div>
+							<div id="collapseThree2" class="collapse" data-bs-parent="#accordion2">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Partido #4 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour2">
+									<i class="fas fa-caret-down pe-2"></i> 8:30pm - Galácticos 1 - 2 Close Friends F.C.
+								</a>
+							</div>
+							<div id="collapseFour2" class="collapse" data-bs-parent="#accordion2">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Partido #5 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive2">
+									<i class="fas fa-caret-down pe-2"></i> 9:30pm - Leones F.C. 3 - 2 Stacy F.C.
+								</a>
+							</div>
+							<div id="collapseFive2" class="collapse" data-bs-parent="#accordion2">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Partido #6 -->
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix2">
+									<i class="fas fa-caret-down pe-2"></i> 9:30pm - Atlético San Pancho 1 - 4 Cerounos F.C.
+								</a>
+							</div>
+							<div id="collapseSix2" class="collapse" data-bs-parent="#accordion2">
+								<div class="card-body">
+									Paco Guerra <i class="fas fa-futbol"></i><br>
+									Nicolas Camacho <i class="fas fa-futbol"></i><br>
+								</div>
+							</div>
+						</div>
+						
 					</div>
-					
 				
 				</div>
 				
