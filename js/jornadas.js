@@ -1,9 +1,10 @@
-function prueba(w,x,y,z) {
-	alert(w+x+y+z);
-}
+/* 
+Parte del codigo es de
+https://www.geeksforgeeks.org/how-to-creating-html-list-from-javascript-array/
+*/
 
 /* Conteo, para que list items no se agreguen muchas veces */
-	let card = [false, false, false, false, false];
+let card = [false, false, false, false, false];
 
 /* funcion para cambiar tarjeta de lider goleador */
 function mostrarNombres(numTarjeta, IDlista1, IDlista2, IDcamisa1, IDcamisa2) {
