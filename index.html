@@ -40,7 +40,28 @@
 	</style>
 	
 	<!-- InstanceBeginEditable name="head" -->
+	<style>
 	
+		#sidebar {
+			height: auto;
+			position: relative;
+			position: -webkit-relative;
+			top: 0px;
+			margin-bottom: 25px;
+		}
+			
+		@media only screen and (min-width:768px) {
+			
+			#sidebar {
+				height: 60vh;
+				position: -webkit-sticky;
+				position: sticky;
+				top: 100px;
+			}
+			
+		}
+	
+	</style>
 	<!-- InstanceEndEditable -->
 </head>
 
@@ -141,16 +162,382 @@
 		</div>
 			
 		
+		<div class="container-fluid bg-secondary text-center py-2 mb-4 text-white">
+				<h2 class="display-4"><strong>Exalumnos del liceo</strong></h2>
+		</div>
+		
 		<div class="container mt-2 mb-5">
 			
-			<div class="p-3">
-				<h2 class="display-4"><strong>Exliceos</strong></h2>
-				<h2 class="display-6">Sitio de interés para exalumnos del Liceo de Monterrey.</h2>
-			</div> 
-			
-			<!-- Alerta página en proceso -->
-			<div class="alert alert-warning">
-				Página en construcción.
+			<div class="row mb-5" id="container" style="display: flex;">
+				
+				<div class="col-md-4 text-center" id="sidebar">
+					
+					<div class="card" style="height: 100%">
+						
+						<div class="card-header bg-secondary text-center text-white">
+							<h4><strong>¡Bienvenido exliceo!</strong></h4>
+						</div>
+						
+						<div class="card-body">
+							<div class="d-flex text-center px-3" style="height: auto">
+
+								<div class="col-4">
+									<img class="mw-100 mh-100 p-2" src="img/logos/logoLiceoHombresSolo.png" alt="liceo hombres">
+								</div>
+								<div class="col-4">
+									<img class="mw-100 mh-100 p-2" src="img/logos/logoLiceoMujeresSolo.png" alt="liceo mujeres">
+								</div>
+								<div class="col-4">
+									<img class="mw-100 mh-100 p-2" src="img/logos/logoLiceoRosalesSolo.png" alt="liceo rosales">
+								</div>
+
+							</div>
+
+							<div class="p-2 text-center">
+								<p>Te damos la bienvenida a la página oficial de exalumnos del Liceo de Monterrey.</p>
+							</div>
+							
+							<div class="px-2 text-center">
+
+								<img class="w-75" src="img/logos/logoExliceos.png" alt="logo exliceos">
+
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<div class="col-md-8" style="height: auto;">
+					
+					<h2 class="display-6 text-center p-2"><strong>Actividad reciente</strong></h2>
+					
+					<!-- modal 4 -->
+					<div class="card mx-auto mb-3 p-2" style="max-width: 850px;">
+						<div class="row g-0">
+							<div class="col-md-4 text-center bg-light p-1">
+								<img src="img/inicio/modal4.jpg" style="max-height: 300px; max-width: 100%" alt="accion exliceo">
+							</div>
+							<div class="col-md-8 p-2">
+								<div class="card-body">
+									<h2 class="card-title">Titulo de tarjeta</h2>
+									<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque temporibus, delectus aliquam, blanditiis velit mollitia sed animi possimus a, voluptas dolorum corporis optio cupiditate.</p>
+
+									<!-- Button to Open the Modal -->
+									<div class="text-center">
+										<button type="button" class="btn btn-primary w-50" data-bs-toggle="modal" data-bs-target="#myModal4">
+											Ver información
+										</button>
+									</div>
+
+									<!-- The Modal -->
+									<div class="modal fade" id="myModal4">
+										<div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+											<div class="modal-content">
+
+												<!-- Modal Header -->
+												<div class="modal-header text-white" style="background-color: #FFA6B6">
+													<h4 class="modal-title">Modal Heading</h4>
+													<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+												</div>
+
+												<!-- Modal body -->
+												<div class="modal-body">
+
+													<div class="row p-2">
+
+														<!-- columna 1 foto -->
+														<div class="col-md-12 col-lg-4">
+															<img src="img/inicio/modal4.jpg" class="w-100" alt="accion exliceo">
+														</div>
+
+														<!-- columna 2 -->
+														<div class="col-md-6 col-lg-4 mt-3">
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque temporibus, delectus aliquam, blanditiis velit mollitia sed animi possimus a, voluptas dolorum corporis optio cupiditate.</p>
+
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque temporibus, delectus aliquam, blanditiis velit mollitia sed animi possimus a, voluptas dolorum corporis optio cupiditate.</p>
+
+															<p>Mas informes <a href="">aquí</a>.</p>		
+														</div>
+
+														<!-- columna 3 -->
+														<div class="col-md-6 col-lg-4 mt-3">
+
+															<ul class="list-group">
+																<li class="list-group-item bg-light">
+																	<strong>Exliceo:</strong> Nombre Apellido
+																</li>
+																<li class="list-group-item">
+																	<strong>Fecha:</strong> Nombre Apellido
+																</li>
+																<li class="list-group-item">
+																	<strong>Lugar:</strong> Dirección del lugar
+																</li>
+																<li class="list-group-item">
+																	Mas informes <a href="">aquí</a>
+																</li>
+															</ul>
+
+														</div>
+
+													</div>
+
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- modal 3 -->
+					<div class="card mx-auto mb-3 p-2" style="max-width: 850px;">
+						<div class="row g-0">
+							<div class="col-md-4 text-center bg-light p-1">
+								<img src="img/inicio/modal3.jpg" style="max-height: 300px; max-width: 100%" alt="accion exliceo">
+							</div>
+							<div class="col-md-8 p-2">
+								<div class="card-body">
+									<h2 class="card-title">Titulo de tarjeta</h2>
+									<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque temporibus, delectus aliquam, blanditiis velit mollitia sed animi possimus a, voluptas dolorum corporis optio cupiditate.</p>
+
+									<!-- Button to Open the Modal -->
+									<div class="text-center">
+										<button type="button" class="btn btn-primary w-50" data-bs-toggle="modal" data-bs-target="#myModal3">
+											Ver información
+										</button>
+									</div>
+
+									<!-- The Modal -->
+									<div class="modal fade" id="myModal3">
+										<div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+											<div class="modal-content">
+
+												<!-- Modal Header -->
+												<div class="modal-header text-white" style="background-color: #066B00">
+													<h4 class="modal-title">Modal Heading</h4>
+													<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+												</div>
+
+												<!-- Modal body -->
+												<div class="modal-body">
+
+													<div class="row p-2">
+
+														<!-- columna 1 foto -->
+														<div class="col-md-12 col-lg-4">
+															<img src="img/inicio/modal3.jpg" class="w-100" alt="accion exliceo">
+														</div>
+
+														<!-- columna 2 -->
+														<div class="col-md-6 col-lg-4 mt-3">
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque temporibus, delectus aliquam, blanditiis velit mollitia sed animi possimus a, voluptas dolorum corporis optio cupiditate.</p>
+
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque temporibus, delectus aliquam, blanditiis velit mollitia sed animi possimus a, voluptas dolorum corporis optio cupiditate.</p>
+
+															<p>Mas informes <a href="">aquí</a>.</p>		
+														</div>
+
+														<!-- columna 3 -->
+														<div class="col-md-6 col-lg-4 mt-3">
+
+															<ul class="list-group">
+																<li class="list-group-item bg-light">
+																	<strong>Exliceo:</strong> Nombre Apellido
+																</li>
+																<li class="list-group-item">
+																	<strong>Fecha:</strong> Nombre Apellido
+																</li>
+																<li class="list-group-item">
+																	<strong>Lugar:</strong> Dirección del lugar
+																</li>
+																<li class="list-group-item">
+																	Mas informes <a href="">aquí</a>
+																</li>
+															</ul>
+
+														</div>
+
+													</div>
+
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- modal 2 -->
+					<div class="card mx-auto mb-3 p-2" style="max-width: 850px;">
+						<div class="row g-0">
+							<div class="col-md-4 text-center bg-light p-1">
+								<img src="img/inicio/modal2.jpg" style="max-height: 300px; max-width: 100%" alt="accion exliceo">
+							</div>
+							<div class="col-md-8 p-2">
+								<div class="card-body">
+									<h2 class="card-title">Titulo de tarjeta</h2>
+									<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque temporibus, delectus aliquam, blanditiis velit mollitia sed animi possimus a, voluptas dolorum corporis optio cupiditate.</p>
+
+									<!-- Button to Open the Modal -->
+									<div class="text-center">
+										<button type="button" class="btn btn-primary w-50" data-bs-toggle="modal" data-bs-target="#myModal2">
+											Ver información
+										</button>
+									</div>
+
+									<!-- The Modal -->
+									<div class="modal fade" id="myModal2">
+										<div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+											<div class="modal-content">
+
+												<!-- Modal Header -->
+												<div class="modal-header bg-warning text-white">
+													<h4 class="modal-title">Modal Heading</h4>
+													<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+												</div>
+
+												<!-- Modal body -->
+												<div class="modal-body">
+
+													<div class="row p-2">
+
+														<!-- columna 1 foto -->
+														<div class="col-md-12 col-lg-4">
+															<img src="img/inicio/modal2.jpg" class="w-100" alt="accion exliceo">
+														</div>
+
+														<!-- columna 2 -->
+														<div class="col-md-6 col-lg-4 mt-3">
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque temporibus, delectus aliquam, blanditiis velit mollitia sed animi possimus a, voluptas dolorum corporis optio cupiditate.</p>
+
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque temporibus, delectus aliquam, blanditiis velit mollitia sed animi possimus a, voluptas dolorum corporis optio cupiditate.</p>
+
+															<p>Mas informes <a href="">aquí</a>.</p>		
+														</div>
+
+														<!-- columna 3 -->
+														<div class="col-md-6 col-lg-4 mt-3">
+
+															<ul class="list-group">
+																<li class="list-group-item bg-light">
+																	<strong>Exliceo:</strong> Nombre Apellido
+																</li>
+																<li class="list-group-item">
+																	<strong>Fecha:</strong> Nombre Apellido
+																</li>
+																<li class="list-group-item">
+																	<strong>Lugar:</strong> Dirección del lugar
+																</li>
+																<li class="list-group-item">
+																	Mas informes <a href="">aquí</a>
+																</li>
+															</ul>
+
+														</div>
+
+													</div>
+
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- modal 1 -->
+					<div class="card mx-auto p-2" style="max-width: 850px;">
+						<div class="row g-0">
+							<div class="col-md-4 text-center bg-light p-1">
+								<img src="img/inicio/modal1.jpg" style="max-height: 300px; max-width: 100%" alt="accion exliceo">
+							</div>
+							<div class="col-md-8 p-2">
+								<div class="card-body">
+									<h2 class="card-title">Titulo de tarjeta</h2>
+									<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque temporibus, delectus aliquam, blanditiis velit mollitia sed animi possimus a, voluptas dolorum corporis optio cupiditate.</p>
+
+									<!-- Button to Open the Modal -->
+									<div class="text-center">
+										<button type="button" class="btn btn-primary w-50" data-bs-toggle="modal" data-bs-target="#myModal1">
+											Ver información
+										</button>
+									</div>
+
+									<!-- The Modal -->
+									<div class="modal fade" id="myModal1">
+										<div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+											<div class="modal-content">
+
+												<!-- Modal Header -->
+												<div class="modal-header bg-warning text-white">
+													<h4 class="modal-title">Modal Heading</h4>
+													<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+												</div>
+
+												<!-- Modal body -->
+												<div class="modal-body">
+
+													<div class="row p-2">
+
+														<!-- columna 1 foto -->
+														<div class="col-md-12 col-lg-4">
+															<img src="img/inicio/modal1.jpg" class="w-100" alt="accion exliceo">
+														</div>
+
+														<!-- columna 2 -->
+														<div class="col-md-6 col-lg-4 mt-3">
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque temporibus, delectus aliquam, blanditiis velit mollitia sed animi possimus a, voluptas dolorum corporis optio cupiditate.</p>
+
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque temporibus, delectus aliquam, blanditiis velit mollitia sed animi possimus a, voluptas dolorum corporis optio cupiditate.</p>
+
+															<p>Mas informes <a href="">aquí</a>.</p>		
+														</div>
+
+														<!-- columna 3 -->
+														<div class="col-md-6 col-lg-4 mt-3">
+
+															<ul class="list-group">
+																<li class="list-group-item bg-light">
+																	<strong>Exliceo:</strong> Nombre Apellido
+																</li>
+																<li class="list-group-item">
+																	<strong>Fecha:</strong> Nombre Apellido
+																</li>
+																<li class="list-group-item">
+																	<strong>Lugar:</strong> Dirección del lugar
+																</li>
+																<li class="list-group-item">
+																	Mas informes <a href="">aquí</a>
+																</li>
+															</ul>
+
+														</div>
+
+													</div>
+
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
 			</div>
 			
 		</div>  
