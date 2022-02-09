@@ -49,7 +49,7 @@ function mostrarNombres(numTarjeta, IDlista1, IDlista2, IDcamisa1, IDcamisa2) {
 	let nombresGolosos = ['Gene ??', 'Pablo García', 'Carlos Gutiérrez', 'Patricio Calvillo', 'Gabriel Coronado', 'Santiago Durán', 'Adrián Martínez', 'Adrián Treviño', 'Andres Dillon', 'Javier González', 'Carlos Flores'];
 	
 	/* ElEquipe */
-	let nombresElEquipe = ['Gene ??', 'Alberto Herrera', 'Diego Pico', 'Moris Camacho', 'Diego Santos', 'Humberto De Leon', 'Josu Monroy', 'Mario Fernández', 'José Monroy', 'Andres De la Garza', 'Alberto Riojas'];
+	let nombresElEquipe = ['Gene ??', 'Alberto Herrera', 'Diego Pico', 'Moriss Camacho', 'Diego Santos', 'Humberto De Leon', 'Josu Monroy', 'Mario Fernández', 'José Monroy', 'Andres De la Garza', 'Alberto Riojas'];
 	
 	
 	/* Obtener listas del html */
