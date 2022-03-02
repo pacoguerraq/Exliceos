@@ -34,7 +34,7 @@ function mostrarNombres(numTarjeta, IDlista1, IDlista2, IDcamisa1, IDcamisa2) {
 	let nombresCerounos = ['Gene 01', 'Ricardo Pío', 'Roberto Zermeño', 'Daniel Pérez', 'Paco Guerra', 'Juan Pablo Del Angel', 'Diego Treviño', 'Diego Torres Angulo', 'Bernardo Peña', 'Andrés Melendez'];
 	
 	/* LaRaza */
-	let nombresLaRaza = ['Gene 90', 'Juergen Hugler', 'Jorge Tamez', 'Alejandro Meza', 'Carlos Treviño', 'Jorge Castañeda', 'Alejandro Torres', 'Marcelo Colorado', 'Emilio Sánchez', 'Humberto Llovera Cantú', 'Marcelo Garza', 'Daniel Guerra', 'César Quiróga', 'Raúl Treviño', 'Rubén Méndez', 'Manuel García', 'Eduardo Montalvo'];
+	let nombresLaRaza = ['Gene 90', 'Juergen Hugler', 'Jorge Tamez', 'Alejandro Meza', 'Carlos Treviño', 'Jorge Castañeda', 'Alejandro Torres', 'Marcelo Colorado', 'Emilio Sánchez', 'Humberto Llovera Cantú', 'Marcelo Garza', 'Daniel Guerra', 'Raúl Treviño', 'Manuel García', 'Eduardo Montalvo', 'Jesús García'];
 	
 	/* Leones */
 	let nombresLeones = ['Gene 95', 'Jaime Guerra', 'Adrían Cantú', 'Adrián Estrada', 'Lorenzo Fernández', 'Luis López', 'Sergio Martínez', 'Alan Andonie', 'Luis Lozano', 'Alan De Luna', 'Juan Jose de Isla', 'Marco Rodríguez', 'Adrián Morales', 'Alejandro Guerrero', 'Cristian Najera'];
