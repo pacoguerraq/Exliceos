@@ -19,7 +19,7 @@ function mostrarNombres(numTarjeta, IDlista1, IDlista2, IDcamisa1, IDcamisa2) {
 	let nombresFuenteOvejuna = ['Gene 98', 'Chema Guerrero', 'Eduardo Quintanar', 'Oscar Vela', 'Angel Celis', 'Diego González', 'Angel Salinas', 'Pablo García', 'Jaime Farias', 'Roberto Casanova', 'Luis Franco', 'Miguel Camacho'];
 	
 	/* Close Friends */
-	let nombresCloseFriends = ['Gene 97-98', 'CloseFriends 1', 'CloseFriends 2', 'CloseFriends 3', 'CloseFriends 4', 'CloseFriends 5', 'CloseFriends 6', 'CloseFriends 7', 'CloseFriends 8', 'CloseFriends 9', 'CloseFriends 10', 'CloseFriends 11'];
+	let nombresCloseFriends = ['Gene 97-98', 'David Padilla','Armando de la Mora','Roberto Reyes','Marcelo Gonzalez','Alejandro Cuellar','Marcelo Candanedo','Diego Salazar','Marcelo Salazar','Chuy Delgado','Juan Pablo Gonzalez','Ernesto Reyes','Juan Pablo Reyes','Edson Carrera','Daniel Magaña'];
 	
 	/* Vikingos */
 	let nombresVikingos = ['Gene 98', 'Mauricio Gutiérrez', 'Juan Pablo Leal', 'Marcelo Guerra', 'Mario Sepúlveda', 'Joel Sepúlveda', 'Emilio Sa', 'Rodrigo Padilla', 'Eugenio Barrera', 'Adrián Ortiz', 'Abelardo Treviño'];
@@ -46,7 +46,7 @@ function mostrarNombres(numTarjeta, IDlista1, IDlista2, IDcamisa1, IDcamisa2) {
 	let nombresGalacticos = ['Gene 97', 'Alejandro Minera', 'David Garza', 'Alejandro Álvarez', 'Pedro Vázquez', 'Emilio Ramírez', 'Patricio Alanis', 'Tomás Martínez'];
 	
 	/* Golosos */
-	let nombresGolosos = ['Gene 96', 'Pablo García', 'Carlos Gutiérrez', 'Patricio Calvillo', 'Gabriel Coronado', 'Santiago Durán', 'Adrián Martínez', 'Adrián Treviño', 'Andres Dillon', 'Javier González', 'Carlos Flores'];
+	let nombresGolosos = ['Gene 96', 'Pablo García', 'Carlos Gutiérrez', 'Patricio Calvillo', 'Gabriel Coronado', 'Santiago Durán', 'Adrián Martínez', 'Adrián Treviño', 'Andres Dillon', 'Javier González', 'Carlos Flores', 'Kike Ayala Hugler'];
 	
 	/* ElEquipe */
 	let nombresElEquipe = ['Gene 94-93', 'Alberto Herrera', 'Diego Pico', 'Moriss Camacho', 'Diego Santos', 'Humberto De Leon', 'Josu Monroy', 'Mario Fernández', 'José Monroy', 'Andres De la Garza', 'Alberto Riojas'];

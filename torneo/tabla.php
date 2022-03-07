@@ -1,3 +1,23 @@
+<?php
+
+include "../conn.php";
+
+// write query for all rows
+$sql = "SELECT * FROM tabla_general ORDER BY posicion ASC";
+
+// make query and get result
+$result = mysqli_query($conn, $sql);
+
+// fetch the resulting rows as an array
+$tabla = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+// free result from memory
+mysqli_free_result($result);
+
+//print_r($tabla);
+
+?>
+
 <!doctype html>
 <html lang="en"><!-- InstanceBegin template="/Templates/template_principal.dwt" codeOutsideHTMLIsLocked="false" -->
 
@@ -5,7 +25,7 @@
 	<meta charset="UTF-8">
 	
 	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>Fotos</title>
+	<title>Tabla</title>
 	<!-- InstanceEndEditable -->
 	
 	<!-- Icon on top -->
@@ -73,11 +93,11 @@
 							<ul class="dropdown-menu dropdown-menu-end text-center">
 								<li><h5 class="dropdown-header">Temporada Ene-Jun '22</h5></li>
 								<li><a class="dropdown-item border-bottom" href="../index_torneo.html"><strong>Inicio</strong></a></li>
-								<li><a class="dropdown-item border-bottom" href="tabla.php">Tabla general</a></li>
+								<li><a class="dropdown-item border-bottom active" href="tabla.php">Tabla general</a></li>
 								<li><a class="dropdown-item border-bottom" href="goleo.php">Goleo</a></li>
 								<li><a class="dropdown-item border-bottom" href="tarjetas.php">Tarjetas</a></li>
 								<li><a class="dropdown-item border-bottom" href="jornadas.php">Jornadas</a></li>
-								<li><a class="dropdown-item active" href="fotos.html">Fotos</a></li>
+								<li><a class="dropdown-item" href="fotos.html">Fotos</a></li>
 							</ul>
 							<!-- InstanceEndEditable -->
 						</li>
@@ -105,33 +125,89 @@
 		
 		<div class="container pt-4">
 			
-			<!-- breadcrumbs -->
 			<ul class="breadcrumb">
 				<li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
 				<li class="breadcrumb-item"><a href="../index_torneo.html">Torneo</a></li>
-				<li class="breadcrumb-item active">Fotos</li>
+				<li class="breadcrumb-item active">Tabla general</li>
 			</ul>
 			
-			<!-- Titulo y fecha -->
 			<div class="p-3">
-				<h2 class="display-4"><strong>Fotos <i class="fas fa-camera"></i></strong></h2> 
-				<h2 class="display-6">Temporada Ene-Jun 2022</h2>
-			</div>  
-
-			<div class="card text-center">
-				
-				<div class="row p-4">
-				
-					<div class="col-12">
+				<h2 class="display-4"><strong>Tabla General</strong></h2>
+				<!--<h2 class="display-6">Jornada 5</h2>-->
+			</div>
+			
+			<div class="card py-3">
+				<table class="table text-center" style="width: 90%; margin: auto;">
+					<!-- Heading -->
+					<thead>
+						<!-- Heading #1 -->
+						<tr>
+							<td colspan="2"></td>
+							<td colspan="4" class="border">Partidos</td>
+							<td colspan="3" class="border d-none d-sm-table-cell">Goles</td>
+							<td></td>
+						</tr>
+						<!-- Heading #2 -->
+						<tr class="bg-secondary text-white">
+							<th scope="col">#</th>
+							<th scope="col">Equipo</th>
+							<th scope="col" class="border-start">PJ</th>
+							<th scope="col">PG</th>
+							<th scope="col">PE</th>
+							<th scope="col" class="border-end">PP</th>
+							<th scope="col" class="d-none d-sm-table-cell">GF</th>
+							<th scope="col" class="d-none d-sm-table-cell">GC</th>
+							<th scope="col" class="d-none d-sm-table-cell border-end">DG</th>
+							<th scope="col">PTS</th>
+						</tr>
+					</thead>
 					
-						<h2 class="display-5"><big>Conoce nuestro instagram</big></h2>
-						<p>Síguenos en nuestra página oficial de instagram.</p>
+					<!-- Body -->
+					<tbody>
+						
+                        <!-- Posiciones -->
+                        <?php foreach($tabla as $equipo){ ?>
+
+                        <tr>
+                            <th scope="row"><?php echo htmlspecialchars($equipo['posicion']) ?></th>
+                            <!-- Equipo -->
+                            <td><strong><?php echo htmlspecialchars($equipo['nombre_equipo']) ?></strong></td>
+                            <!-- Partidos -->
+                            <td class="border-start"><?php echo htmlspecialchars($equipo['PJ']) ?></td> <!-- PJ -->
+                            <td><?php echo htmlspecialchars($equipo['PG']) ?></td> <!-- PG -->
+                            <td><?php echo htmlspecialchars($equipo['PE']) ?></td> <!-- PE -->
+                            <td class="border-end"><?php echo htmlspecialchars($equipo['PP']) ?></td> <!-- PP -->
+                            <!-- Goles -->
+                            <td class="d-none d-sm-table-cell"><?php echo htmlspecialchars($equipo['GF']) ?></td> <!-- GF -->
+                            <td class="d-none d-sm-table-cell"><?php echo htmlspecialchars($equipo['GC']) ?></td> <!-- GC -->
+                            <td class="d-none d-sm-table-cell border-end"><?php echo htmlspecialchars($equipo['DG']) ?></td> <!-- DG -->
+                            <!-- Puntos -->
+                            <td><?php echo htmlspecialchars($equipo['PTS']) ?></td>
+                        </tr>
+
+                        <?php } ?>
+
+					</tbody>
+				</table>
+				
+				<br>
+				
+				<!-- Info abajo de la tabla -->
+				<div class="row">
+					
+					<div class="col-12 col-sm-8">
+						
+						<p class="text-secondary" style="width: 90%; margin: auto;">
+							PJ = Jugados, PG = Ganados, PP = Perdidos, PE = Empatados
+							<br>
+							<span class="d-none d-sm-block">GF = A favor, GC = En contra, DF = Diferencia</span>
+						</p>
 						
 					</div>
 					
-					<div class="col-12">
-					
-						<iframe width="90%" height="430" class="border" src="https://www.instagram.com/p/CYmuqJEvdd0/embed"></iframe>
+					<div class="d-none d-sm-block col-sm-4 text-center">
+						
+						<img src="../img/logos/logoExliceos.png" alt="Logo exliceos" height="55">
 						
 					</div>
 					
@@ -139,10 +215,7 @@
 				
 			</div>
 			
-						
-
-			
-		</div>  
+		</div>
 		
 	  <!-- InstanceEndEditable -->
 		
@@ -180,4 +253,13 @@
 </div>
 	
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+
+</html>
+
+<?php
+
+// close connection
+mysqli_close($conn);
+
+?>

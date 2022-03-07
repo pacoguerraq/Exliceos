@@ -8,7 +8,7 @@ function cardGoleador() {
 	/* goles */
 	document.getElementById("golesCard").innerHTML = document.getElementById("golesTabla").innerHTML;
 	/* jornadas */
-	document.getElementById("jornadaCard").innerHTML = document.getElementById("jornadaTitulo").innerHTML;
+	/*document.getElementById("jornadaCard").innerHTML = document.getElementById("jornadaTitulo").innerHTML;*/
 	/* foto camisa */
 	if (equipo.innerHTML == "Fuente Ovejuna F.C.") {
 		document.getElementById("camisaCard").src = "../img/camisas/fuenteOvejuna.png";
@@ -26,9 +26,9 @@ function cardGoleador() {
 		document.getElementById("camisaCard").src = "../img/camisas/laRaza.png";
 	} else if (equipo.innerHTML == "Leones F.C.") {
 		document.getElementById("camisaCard").src = "../img/camisas/leones.png";
-	} else if (equipo.innerHTML == "Atlético San Pancho") {
+	} else if (equipo.innerHTML == "Atletico San Pancho") {
 		document.getElementById("camisaCard").src = "../img/camisas/atleticoSanPancho.png";
-	} else if (equipo.innerHTML == "Galácticos") {
+	} else if (equipo.innerHTML == "Galacticos") {
 		document.getElementById("camisaCard").src = "../img/camisas/galacticos.png";
 	} else if (equipo.innerHTML == "Gol Osos") {
 		document.getElementById("camisaCard").src = "../img/camisas/golosos.png";

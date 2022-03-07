@@ -1,3 +1,132 @@
+<?php
+
+include "../conn.php";
+
+// consultas para jornada
+
+// write query for all rows
+$sqlJornadaEq1 = "SELECT jornadaActual.jor, jornadaActual.eq1, jornadaActual.ident, jornadaActual.fecha, tabla_general.img_path, tabla_general.posicion FROM jornadaActual INNER JOIN tabla_general ON jornadaActual.eq1 = tabla_general.nombre_equipo ORDER BY ident;";
+// make query and get result
+$resultJornadaEq1 = mysqli_query($conn, $sqlJornadaEq1);
+// fetch the resulting rows as an array
+$jornadaEq1 = mysqli_fetch_all($resultJornadaEq1, MYSQLI_ASSOC);
+// free result from memory
+mysqli_free_result($resultJornadaEq1);
+
+// write query for all rows
+$sqlJornadaEq2 = "SELECT jornadaActual.jor, jornadaActual.eq2, jornadaActual.ident, jornadaActual.fecha, tabla_general.img_path, tabla_general.posicion FROM jornadaActual INNER JOIN tabla_general ON jornadaActual.eq2 = tabla_general.nombre_equipo ORDER BY ident;";
+// make query and get result
+$resultJornadaEq2 = mysqli_query($conn, $sqlJornadaEq2);
+// fetch the resulting rows as an array
+$jornadaEq2 = mysqli_fetch_all($resultJornadaEq2, MYSQLI_ASSOC);
+// free result from memory
+mysqli_free_result($resultJornadaEq2);
+
+// Consultas para resultados
+
+// write query for all rows
+$sqlJornadas1 = "SELECT * FROM jornadas WHERE jornada=1 ORDER BY ident;";
+// make query and get result
+$resultJornadas1 = mysqli_query($conn, $sqlJornadas1);
+// fetch the resulting rows as an array
+$jornada1 = mysqli_fetch_all($resultJornadas1, MYSQLI_ASSOC);
+// free result from memory
+mysqli_free_result($resultJornadas1);
+
+// write query for all rows
+$sqlJornadas2 = "SELECT * FROM jornadas WHERE jornada=2 ORDER BY ident;";
+// make query and get result
+$resultJornadas2 = mysqli_query($conn, $sqlJornadas2);
+// fetch the resulting rows as an array
+$jornada2 = mysqli_fetch_all($resultJornadas2, MYSQLI_ASSOC);
+// free result from memory
+mysqli_free_result($resultJornadas2);
+
+// write query for all rows
+$sqlJornadas3 = "SELECT * FROM jornadas WHERE jornada=3 ORDER BY ident;";
+// make query and get result
+$resultJornadas3 = mysqli_query($conn, $sqlJornadas3);
+// fetch the resulting rows as an array
+$jornada3 = mysqli_fetch_all($resultJornadas3, MYSQLI_ASSOC);
+// free result from memory
+mysqli_free_result($resultJornadas3);
+
+// write query for all rows
+$sqlJornadas4 = "SELECT * FROM jornadas WHERE jornada=4 ORDER BY ident;";
+// make query and get result
+$resultJornadas4 = mysqli_query($conn, $sqlJornadas4);
+// fetch the resulting rows as an array
+$jornada4 = mysqli_fetch_all($resultJornadas4, MYSQLI_ASSOC);
+// free result from memory
+mysqli_free_result($resultJornadas4);
+
+// write query for all rows
+$sqlJornadas5 = "SELECT * FROM jornadas WHERE jornada=5 ORDER BY ident;";
+// make query and get result
+$resultJornadas5 = mysqli_query($conn, $sqlJornadas5);
+// fetch the resulting rows as an array
+$jornada5 = mysqli_fetch_all($resultJornadas5, MYSQLI_ASSOC);
+// free result from memory
+mysqli_free_result($resultJornadas5);
+
+// write query for all rows
+$sqlJornadas6 = "SELECT * FROM jornadas WHERE jornada=6 ORDER BY ident;";
+// make query and get result
+$resultJornadas6 = mysqli_query($conn, $sqlJornadas6);
+// fetch the resulting rows as an array
+$jornada6 = mysqli_fetch_all($resultJornadas6, MYSQLI_ASSOC);
+// free result from memory
+mysqli_free_result($resultJornadas6);
+
+// write query for all rows
+$sqlJornadas7 = "SELECT * FROM jornadas WHERE jornada=7 ORDER BY ident;";
+// make query and get result
+$resultJornadas7 = mysqli_query($conn, $sqlJornadas7);
+// fetch the resulting rows as an array
+$jornada7 = mysqli_fetch_all($resultJornadas7, MYSQLI_ASSOC);
+// free result from memory
+mysqli_free_result($resultJornadas7);
+
+// write query for all rows
+$sqlJornadas8 = "SELECT * FROM jornadas WHERE jornada=8 ORDER BY ident;";
+// make query and get result
+$resultJornadas8 = mysqli_query($conn, $sqlJornadas8);
+// fetch the resulting rows as an array
+$jornada8 = mysqli_fetch_all($resultJornadas8, MYSQLI_ASSOC);
+// free result from memory
+mysqli_free_result($resultJornadas8);
+
+// write query for all rows
+$sqlJornadas9 = "SELECT * FROM jornadas WHERE jornada=9 ORDER BY ident;";
+// make query and get result
+$resultJornadas9 = mysqli_query($conn, $sqlJornadas9);
+// fetch the resulting rows as an array
+$jornada9 = mysqli_fetch_all($resultJornadas9, MYSQLI_ASSOC);
+// free result from memory
+mysqli_free_result($resultJornadas9);
+
+// write query for all rows
+$sqlJornadas10 = "SELECT * FROM jornadas WHERE jornada=10 ORDER BY ident;";
+// make query and get result
+$resultJornadas10 = mysqli_query($conn, $sqlJornadas10);
+// fetch the resulting rows as an array
+$jornada10 = mysqli_fetch_all($resultJornadas10, MYSQLI_ASSOC);
+// free result from memory
+mysqli_free_result($resultJornadas10);
+
+// write query for all rows
+$sqlJornadas11 = "SELECT * FROM jornadas WHERE jornada=11 ORDER BY ident;";
+// make query and get result
+$resultJornadas11 = mysqli_query($conn, $sqlJornadas11);
+// fetch the resulting rows as an array
+$jornada11 = mysqli_fetch_all($resultJornadas11, MYSQLI_ASSOC);
+// free result from memory
+mysqli_free_result($resultJornadas11);
+
+//print_r($tabla);
+
+?>
+
 <!doctype html>
 <html lang="en"><!-- InstanceBegin template="/Templates/template_principal.dwt" codeOutsideHTMLIsLocked="false" -->
 
@@ -122,8 +251,8 @@
 			
 			<!-- Jornada y fecha -->
 			<div class="p-3">
-				<h2 class="display-4"><strong>Jornada 6</strong></h2>
-				<h2 class="display-6">7 / Marzo / 2022 <i class="far fa-calendar-alt"></i></h2>
+				<h2 class="display-4"><strong>Jornada <?php echo htmlspecialchars($jornadaEq1[0]['jor']) ?></strong></h2>
+				<h2 class="display-6"><?php echo htmlspecialchars($jornadaEq1[0]['fecha']) ?> <i class="far fa-calendar-alt"></i></h2>
 			</div>
 			
 			
@@ -146,7 +275,7 @@
 							<div class="d-flex">
 								<!-- Equipo #1 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoStacy.png" class="w-100" alt="" id="camisa_1a"><br>
+									<img src="../img/camisasJornada/<?php echo htmlspecialchars($jornadaEq1[0]['img_path']) ?>" class="w-100" alt="" id="camisa_1a"><br>
 								</div>
 								<!-- VS. -->
 								<div class="p-2  text-center align-self-center">
@@ -154,7 +283,7 @@
 								</div>
 								<!-- Equipo #2 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoLeyendas.png" class="w-100" alt="" id="camisa_1b"><br>
+									<img src="../img/camisasJornada/<?php echo htmlspecialchars($jornadaEq2[0]['img_path']) ?>" class="w-100" alt="" id="camisa_1b"><br>
 								</div>
 							</div>
 
@@ -173,11 +302,11 @@
 							<div class="row mx-1 border-top border-bottom py-2">
 								<!-- equipo #1 -->
 								<div class="col-6 text-center">
-									<span class="text-warning">5º Lugar</span>
+									<span class="text-warning"><?php echo htmlspecialchars($jornadaEq1[0]['posicion']) ?>º Lugar</span>
 								</div>
 								<!-- equipo #2 -->
 								<div class="col-6 text-center">
-									<span class="text-warning">1º Lugar</span>
+									<span class="text-warning"><?php echo htmlspecialchars($jornadaEq2[0]['posicion']) ?>º Lugar</span>
 								</div>
 							</div>
 
@@ -234,7 +363,7 @@
 							<div class="d-flex">
 								<!-- Equipo #1 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoLeones.png" class="w-100" alt="" id="camisa_2a"><br>
+									<img src="../img/camisasJornada/<?php echo htmlspecialchars($jornadaEq1[1]['img_path']) ?>" class="w-100" alt="" id="camisa_2a"><br>
 								</div>
 								<!-- VS. -->
 								<div class="p-2  text-center align-self-center">
@@ -242,7 +371,7 @@
 								</div>
 								<!-- Equipo #2 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoGolosos.png" class="w-100" alt="" id="camisa_2b"><br>
+									<img src="../img/camisasJornada/<?php echo htmlspecialchars($jornadaEq2[1]['img_path']) ?>" class="w-100" alt="" id="camisa_2b"><br>
 								</div>
 							</div>
 
@@ -261,11 +390,11 @@
 							<div class="row mx-1 border-top border-bottom py-2">
 								<!-- equipo #1 -->
 								<div class="col-6 text-center">
-									<span class="text-warning">11º Lugar</span>
+									<span class="text-warning"><?php echo htmlspecialchars($jornadaEq1[1]['posicion']) ?>º Lugar</span>
 								</div>
 								<!-- equipo #2 -->
 								<div class="col-6 text-center">
-									<span class="text-warning">2º Lugar</span>
+									<span class="text-warning"><?php echo htmlspecialchars($jornadaEq2[1]['posicion']) ?>º Lugar</span>
 								</div>
 							</div>
 
@@ -321,7 +450,7 @@
 							<div class="d-flex">
 								<!-- Equipo #1 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoCerounos.png" class="w-100" alt="" id="camisa_3a"><br>
+									<img src="../img/camisasJornada/<?php echo htmlspecialchars($jornadaEq1[2]['img_path']) ?>" class="w-100" alt="" id="camisa_3a"><br>
 								</div>
 								<!-- VS. -->
 								<div class="p-2  text-center align-self-center">
@@ -329,7 +458,7 @@
 								</div>
 								<!-- Equipo #2 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoLaRaza.png" class="w-100" alt="" id="camisa_3b"><br>
+									<img src="../img/camisasJornada/<?php echo htmlspecialchars($jornadaEq2[2]['img_path']) ?>" class="w-100" alt="" id="camisa_3b"><br>
 								</div>
 							</div>
 
@@ -348,11 +477,11 @@
 							<div class="row mx-1 border-top border-bottom py-2">
 								<!-- equipo #1 -->
 								<div class="col-6 text-center">
-									<span class="text-warning">6º Lugar</span>
+									<span class="text-warning"><?php echo htmlspecialchars($jornadaEq1[2]['posicion']) ?>º Lugar</span>
 								</div>
 								<!-- equipo #2 -->
 								<div class="col-6 text-center">
-									<span class="text-warning">3º Lugar</span>
+									<span class="text-warning"><?php echo htmlspecialchars($jornadaEq2[2]['posicion']) ?>º Lugar</span>
 								</div>
 							</div>
 
@@ -408,7 +537,7 @@
 							<div class="d-flex">
 								<!-- Equipo #1 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoAtleticoSanPancho.png" class="w-100" alt="" id="camisa_4a"><br>
+									<img src="../img/camisasJornada/<?php echo htmlspecialchars($jornadaEq1[3]['img_path']) ?>" class="w-100" alt="" id="camisa_4a"><br>
 								</div>
 								<!-- VS. -->
 								<div class="p-2  text-center align-self-center">
@@ -416,7 +545,7 @@
 								</div>
 								<!-- Equipo #2 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoGalacticos.png" class="w-100" alt="" id="camisa_4b"><br>
+									<img src="../img/camisasJornada/<?php echo htmlspecialchars($jornadaEq2[3]['img_path']) ?>" class="w-100" alt="" id="camisa_4b"><br>
 								</div>
 							</div>
 
@@ -435,11 +564,11 @@
 							<div class="row mx-1 border-top border-bottom py-2">
 								<!-- equipo #1 -->
 								<div class="col-6 text-center">
-									<span class="text-warning">8º Lugar</span>
+									<span class="text-warning"><?php echo htmlspecialchars($jornadaEq1[3]['posicion']) ?>º Lugar</span>
 								</div>
 								<!-- equipo #2 -->
 								<div class="col-6 text-center">
-									<span class="text-warning">9º Lugar</span>
+									<span class="text-warning"><?php echo htmlspecialchars($jornadaEq2[3]['posicion']) ?>º Lugar</span>
 								</div>
 							</div>
 
@@ -495,7 +624,7 @@
 							<div class="d-flex">
 								<!-- Equipo #1 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoCloseFriends.png" class="w-100" alt="" id="camisa_5a"><br>
+									<img src="../img/camisasJornada/<?php echo htmlspecialchars($jornadaEq1[4]['img_path']) ?>" class="w-100" alt="" id="camisa_5a"><br>
 								</div>
 								<!-- VS. -->
 								<div class="p-2  text-center align-self-center">
@@ -503,7 +632,7 @@
 								</div>
 								<!-- Equipo #2 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoElEquipe.png" class="w-100" alt="" id="camisa_5b"><br>
+									<img src="../img/camisasJornada/<?php echo htmlspecialchars($jornadaEq2[4]['img_path']) ?>" class="w-100" alt="" id="camisa_5b"><br>
 								</div>
 							</div>
 
@@ -522,11 +651,11 @@
 							<div class="row mx-1 border-top border-bottom py-2">
 								<!-- equipo #1 -->
 								<div class="col-6 text-center">
-									<span class="text-warning">4º Lugar</span>
+									<span class="text-warning"><?php echo htmlspecialchars($jornadaEq1[4]['posicion']) ?>º Lugar</span>
 								</div>
 								<!-- equipo #2 -->
 								<div class="col-6 text-center">
-									<span class="text-warning">10º Lugar</span>
+									<span class="text-warning"><?php echo htmlspecialchars($jornadaEq2[4]['posicion']) ?>º Lugar</span>
 								</div>
 							</div>
 
@@ -582,7 +711,7 @@
 							<div class="d-flex">
 								<!-- Equipo #1 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoVikingos.png" class="w-100" alt="" id="camisa_6a"><br>
+									<img src="../img/camisasJornada/<?php echo htmlspecialchars($jornadaEq1[5]['img_path']) ?>" class="w-100" alt="" id="camisa_6a"><br>
 								</div>
 								<!-- VS. -->
 								<div class="p-2  text-center align-self-center">
@@ -590,7 +719,7 @@
 								</div>
 								<!-- Equipo #2 -->
 								<div class="p-2  text-center flex-grow-1">
-									<img src="../img/camisasJornada/infoFuenteOvejuna.png" class="w-100" alt="" id="camisa_6b"><br>
+									<img src="../img/camisasJornada/<?php echo htmlspecialchars($jornadaEq2[5]['img_path']) ?>" class="w-100" alt="" id="camisa_6b"><br>
 								</div>
 							</div>
 
@@ -609,11 +738,11 @@
 							<div class="row mx-1 border-top border-bottom py-2">
 								<!-- equipo #1 -->
 								<div class="col-6 text-center">
-									<span class="text-warning">12º Lugar</span>
+									<span class="text-warning"><?php echo htmlspecialchars($jornadaEq1[5]['posicion']) ?>º Lugar</span>
 								</div>
 								<!-- equipo #2 -->
 								<div class="col-6 text-center">
-									<span class="text-warning">7º Lugar</span>
+									<span class="text-warning"><?php echo htmlspecialchars($jornadaEq2[5]['posicion']) ?>º Lugar</span>
 								</div>
 							</div>
 
@@ -691,34 +820,34 @@
 				</li>
 				
 				<!-- J6 -->
-				<!--<li class="nav-item">
+				<li class="nav-item">
 					<a class="nav-link" data-bs-toggle="tab" href="#j6">J6</a>
-				</li>-->
+				</li>
 				
 				<!-- J7 -->
-				<!--<li class="nav-item">
+				<li class="nav-item">
 					<a class="nav-link" data-bs-toggle="tab" href="#j7">J7</a>
-				</li>-->
+				</li>
 				
 				<!-- J8 -->
-				<!--<li class="nav-item">
+				<li class="nav-item">
 					<a class="nav-link" data-bs-toggle="tab" href="#j8">J8</a>
-				</li>-->
+				</li>
 				
 				<!-- J9 -->
-				<!--<li class="nav-item">
+				<li class="nav-item">
 					<a class="nav-link" data-bs-toggle="tab" href="#j9">J9</a>
-				</li>-->
+				</li>
 				
 				<!-- J10 -->
-				<!--<li class="nav-item">
+				<li class="nav-item">
 					<a class="nav-link" data-bs-toggle="tab" href="#j10">J10</a>
-				</li>-->
+				</li>
 				
 				<!-- J11 -->
-				<!--<li class="nav-item">
+				<li class="nav-item">
 					<a class="nav-link" data-bs-toggle="tab" href="#j11">J11</a>
-				</li>-->
+				</li>
 				
 			</ul>
 
@@ -730,6 +859,7 @@
 				<div id="j1" class="container tab-pane active"><br>
 					
 					<h3 class="display-6 px-5">Jornada 1</h3>
+                    <h4 class="px-5"><?php echo htmlspecialchars($jornada1[0]['fecha']) ?></h4>
 					
 					<br>
 					<table class="table text-center" style="width: 97%; margin: auto;">
@@ -738,71 +868,20 @@
 						<tbody>
 							
 							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">7:30 PM</th>
+								<th colspan="5" scope="col">Resultados</th>
 							</tr>
 
-							<!-- 7:30 Partido #1 -->
+                            <?php foreach($jornada1 as $j1){ ?>
+
 							<tr>
-								<td class="align-middle" style="width: 40%">Gol Osos</td>	
-								<td class="align-middle">4</td> 		
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j1['eq1']) ?></td>	
+								<td class="align-middle"><?php echo htmlspecialchars($j1['res_eq1']) ?></td> 		
 								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">El Equipe</td>
+								<td class="align-middle"><?php echo htmlspecialchars($j1['res_eq2']) ?></td> 
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j1['eq2']) ?></td>
 							</tr>
 
-							<!-- 7:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Leyendas</td>	
-								<td class="align-middle">4</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">Fuente Ovejuna F.C.</td>
-							</tr>
-							
-							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">8:30 PM</th>
-							</tr>
-
-							<!-- 8:30 Partido #1 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">La Raza</td>	
-								<td class="align-middle">9</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">1</td> 
-								<td class="align-middle" style="width: 40%">Vikingos F.C.</td>
-							</tr>
-
-							<!-- 8:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Galácticos</td>	
-								<td class="align-middle">1</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">Close Friends F.C.</td>
-							</tr>
-							
-							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">9:30 PM</th>
-							</tr>
-
-							<!-- 9:30 Partido #1 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Leones F.C.</td>	
-								<td class="align-middle">3</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">Stacy F.C.</td>
-							</tr>
-
-							<!-- 9:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Atlético San Pancho</td>	
-								<td class="align-middle">1</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">4</td> 
-								<td class="align-middle" style="width: 40%">Cerounos F.C</td>
-							</tr>
-
+                            <?php } ?>
 
 						</tbody>
 
@@ -831,6 +910,7 @@
 				<div id="j2" class="container tab-pane fade"><br>
 					
 					<h3 class="display-6 px-5">Jornada 2</h3>
+					<h4 class="px-5"><?php echo htmlspecialchars($jornada2[0]['fecha']) ?></h4>
 					
 					<br>
 					<table class="table text-center" style="width: 97%; margin: auto;">
@@ -839,71 +919,20 @@
 						<tbody>
 							
 							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">7:30 PM</th>
+								<th colspan="5" scope="col">Resultados</th>
 							</tr>
 
-							<!-- 7:30 Partido #1 -->
+                            <?php foreach($jornada2 as $j2){ ?>
+
 							<tr>
-								<td class="align-middle" style="width: 40%">Gol Osos</td>	
-								<td class="align-middle">2</td> 		
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j2['eq1']) ?></td>	
+								<td class="align-middle"><?php echo htmlspecialchars($j2['res_eq1']) ?></td> 		
 								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">1</td> 
-								<td class="align-middle" style="width: 40%">Cerounos F.C.</td>
+								<td class="align-middle"><?php echo htmlspecialchars($j2['res_eq2']) ?></td> 
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j2['eq2']) ?></td>
 							</tr>
 
-							<!-- 7:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Leones F.C.</td>	
-								<td class="align-middle">3</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">6</td> 
-								<td class="align-middle" style="width: 40%">Close Friends F.C.</td>
-							</tr>
-							
-							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">8:30 PM</th>
-							</tr>
-
-							<!-- 8:30 Partido #1 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Atlético San Pancho</td>	
-								<td class="align-middle">2</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">6</td> 
-								<td class="align-middle" style="width: 40%">Stacy F.C.</td>
-							</tr>
-
-							<!-- 8:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Galácticos</td>	
-								<td class="align-middle">3</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">1</td> 
-								<td class="align-middle" style="width: 40%">Vikingos F.C.</td>
-							</tr>
-							
-							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">9:30 PM</th>
-							</tr>
-
-							<!-- 9:30 Partido #1 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Fuente Ovejuna F.C.</td>	
-								<td class="align-middle">0</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">La Raza</td>
-							</tr>
-
-							<!-- 9:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Leyendas</td>	
-								<td class="align-middle">2</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">0</td> 
-								<td class="align-middle" style="width: 40%">El Equipe</td>
-							</tr>
-
+                            <?php } ?>
 
 						</tbody>
 
@@ -933,6 +962,7 @@
 				<div id="j3" class="container tab-pane fade"><br>
 					
 					<h3 class="display-6 px-5">Jornada 3</h3>
+					<h4 class="px-5"><?php echo htmlspecialchars($jornada3[0]['fecha']) ?></h4>
 					
 					<br>
 					<table class="table text-center" style="width: 97%; margin: auto;">
@@ -941,71 +971,20 @@
 						<tbody>
 							
 							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">7:30 PM</th>
+								<th colspan="5" scope="col">Resultados</th>
 							</tr>
 
-							<!-- 7:30 Partido #1 -->
+                            <?php foreach($jornada3 as $j3){ ?>
+
 							<tr>
-								<td class="align-middle" style="width: 40%">Cerounos F.C.</td>	
-								<td class="align-middle">2</td> 		
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j3['eq1']) ?></td>	
+								<td class="align-middle"><?php echo htmlspecialchars($j3['res_eq1']) ?></td> 		
 								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">3</td> 
-								<td class="align-middle" style="width: 40%">El Equipe</td>
+								<td class="align-middle"><?php echo htmlspecialchars($j3['res_eq2']) ?></td> 
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j3['eq2']) ?></td>
 							</tr>
 
-							<!-- 7:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Leones F.C.</td>	
-								<td class="align-middle">-</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">-</td> 
-								<td class="align-middle" style="width: 40%">La Raza</td>
-							</tr>
-							
-							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">8:30 PM</th>
-							</tr>
-
-							<!-- 8:30 Partido #1 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Stacy F.C.</td>	
-								<td class="align-middle">1</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">Fuente Ovejuna F.C.</td>
-							</tr>
-
-							<!-- 8:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Gol Osos</td>	
-								<td class="align-middle">2</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">1</td> 
-								<td class="align-middle" style="width: 40%">Galácticos</td>
-							</tr>
-							
-							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">9:30 PM</th>
-							</tr>
-
-							<!-- 9:30 Partido #1 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Atlético San Pancho</td>	
-								<td class="align-middle">2</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">0</td> 
-								<td class="align-middle" style="width: 40%">Leyendas</td>
-							</tr>
-
-							<!-- 9:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Close Friends F.C.</td>	
-								<td class="align-middle">7</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">0</td> 
-								<td class="align-middle" style="width: 40%">Vikingos F.C</td>
-							</tr>
-
+                            <?php } ?>
 
 						</tbody>
 
@@ -1034,6 +1013,7 @@
 				<div id="j4" class="container tab-pane fade"><br>
 					
 					<h3 class="display-6 px-5">Jornada 4</h3>
+					<h4 class="px-5"><?php echo htmlspecialchars($jornada4[0]['fecha']) ?></h4>
 					
 					<br>
 					<table class="table text-center" style="width: 97%; margin: auto;">
@@ -1042,71 +1022,20 @@
 						<tbody>
 							
 							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">7:30 PM</th>
+								<th colspan="5" scope="col">Resultados</th>
 							</tr>
 
-							<!-- 7:30 Partido #1 -->
+                            <?php foreach($jornada4 as $j4){ ?>
+
 							<tr>
-								<td class="align-middle" style="width: 40%">Stacy F.C.</td>	
-								<td class="align-middle">4</td> 		
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j4['eq1']) ?></td>	
+								<td class="align-middle"><?php echo htmlspecialchars($j4['res_eq1']) ?></td> 		
 								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">1</td> 
-								<td class="align-middle" style="width: 40%">Gol Osos</td>
+								<td class="align-middle"><?php echo htmlspecialchars($j4['res_eq2']) ?></td> 
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j4['eq2']) ?></td>
 							</tr>
 
-							<!-- 7:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Close Friends F.C.</td>	
-								<td class="align-middle">1</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">3</td> 
-								<td class="align-middle" style="width: 40%">Cerounos F.C.</td>
-							</tr>
-							
-							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">8:30 PM</th>
-							</tr>
-
-							<!-- 8:30 Partido #1 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">La Raza</td>	
-								<td class="align-middle">1</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">Leyendas</td>
-							</tr>
-
-							<!-- 8:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">El Equipe</td>	
-								<td class="align-middle">3</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">3</td> 
-								<td class="align-middle" style="width: 40%">Galácticos</td>
-							</tr>
-							
-							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">9:30 PM</th>
-							</tr>
-
-							<!-- 9:30 Partido #1 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Vikingos F.C.</td>	
-								<td class="align-middle">1</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">6</td> 
-								<td class="align-middle" style="width: 40%">Atlético San Pancho</td>
-							</tr>
-
-							<!-- 9:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Fuente Ovejuna F.C.</td>	
-								<td class="align-middle">3</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">Leones F.C</td>
-							</tr>
-
+                            <?php } ?>
 
 						</tbody>
 
@@ -1135,6 +1064,7 @@
 				<div id="j5" class="container tab-pane fade"><br>
 					
 					<h3 class="display-6 px-5">Jornada 5</h3>
+					<h4 class="px-5"><?php echo htmlspecialchars($jornada5[0]['fecha']) ?></h4>
 					
 					<br>
 					<table class="table text-center" style="width: 97%; margin: auto;">
@@ -1143,71 +1073,378 @@
 						<tbody>
 							
 							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">7:30 PM</th>
+								<th colspan="5" scope="col">Resultados</th>
 							</tr>
 
-							<!-- 7:30 Partido #1 -->
+                            <?php foreach($jornada5 as $j5){ ?>
+
 							<tr>
-								<td class="align-middle" style="width: 40%">Atlético San Pancho</td>	
-								<td class="align-middle">3</td> 		
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j5['eq1']) ?></td>	
+								<td class="align-middle"><?php echo htmlspecialchars($j5['res_eq1']) ?></td> 		
 								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">6</td> 
-								<td class="align-middle" style="width: 40%">Gol Osos</td>
+								<td class="align-middle"><?php echo htmlspecialchars($j5['res_eq2']) ?></td> 
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j5['eq2']) ?></td>
 							</tr>
 
-							<!-- 7:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Stacy F.C.</td>	
-								<td class="align-middle">4</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">Galácticos</td>
-							</tr>
+                            <?php } ?>
+
+						</tbody>
+
+					</table>
+
+					<br>
+
+					<!-- Info abajo de la tabla -->
+					<div class="row">
+
+						<div class="col-12 col-sm-8">
+
+						</div>
+
+						<div class="d-none d-sm-block col-sm-4 text-center">
+
+							<img src="../img/logos/logoExliceos.png" alt="Logo exliceos" height="55">
+
+						</div>
+
+					</div>
+					
+				</div>
+
+                <!-- J6 -->
+				<div id="j6" class="container tab-pane fade"><br>
+					
+					<h3 class="display-6 px-5">Jornada 6</h3>
+                    <h4 class="px-5"><?php echo htmlspecialchars($jornada6[0]['fecha']) ?></h4>
+					
+					<br>
+					<table class="table text-center" style="width: 97%; margin: auto;">
+
+						<!-- Body -->
+						<tbody>
 							
 							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">8:30 PM</th>
+								<th colspan="5" scope="col">Resultados</th>
 							</tr>
 
-							<!-- 8:30 Partido #1 -->
+                            <?php foreach($jornada6 as $j6){ ?>
+
 							<tr>
-								<td class="align-middle" style="width: 40%">Vikingos F.C.</td>	
-								<td class="align-middle">0</td> 		
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j6['eq1']) ?></td>	
+								<td class="align-middle"><?php echo htmlspecialchars($j6['res_eq1']) ?></td> 		
 								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">Leyendas</td>
+								<td class="align-middle"><?php echo htmlspecialchars($j6['res_eq2']) ?></td> 
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j6['eq2']) ?></td>
 							</tr>
 
-							<!-- 8:30 Partido #2 -->
-							<tr>
-								<td class="align-middle" style="width: 40%">Fuente Ovejuna F.C.</td>	
-								<td class="align-middle">2</td> 		
-								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">1</td> 
-								<td class="align-middle" style="width: 40%">El Equipe</td>
-							</tr>
+                            <?php } ?>
+
+						</tbody>
+
+					</table>
+
+					<br>
+
+					<!-- Info abajo de la tabla -->
+					<div class="row">
+
+						<div class="col-12 col-sm-8">
+
+						</div>
+
+						<div class="d-none d-sm-block col-sm-4 text-center">
+
+							<img src="../img/logos/logoExliceos.png" alt="Logo exliceos" height="55">
+
+						</div>
+
+					</div>
+					
+				</div>
+				
+				<!-- J7 -->
+				<div id="j7" class="container tab-pane fade"><br>
+					
+					<h3 class="display-6 px-5">Jornada 7</h3>
+					<h4 class="px-5"><?php echo htmlspecialchars($jornada7[0]['fecha']) ?></h4>
+					
+					<br>
+					<table class="table text-center" style="width: 97%; margin: auto;">
+
+						<!-- Body -->
+						<tbody>
 							
 							<tr class="bg-secondary text-white">
-								<th colspan="5" scope="col">9:30 PM</th>
+								<th colspan="5" scope="col">Resultados</th>
 							</tr>
 
-							<!-- 9:30 Partido #1 -->
+                            <?php foreach($jornada7 as $j7){ ?>
+
 							<tr>
-								<td class="align-middle" style="width: 40%">Cerounos F.C.</td>	
-								<td class="align-middle">3</td> 		
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j7['eq1']) ?></td>	
+								<td class="align-middle"><?php echo htmlspecialchars($j7['res_eq1']) ?></td> 		
 								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">2</td> 
-								<td class="align-middle" style="width: 40%">Leones F.C.</td>
+								<td class="align-middle"><?php echo htmlspecialchars($j7['res_eq2']) ?></td> 
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j7['eq2']) ?></td>
 							</tr>
 
-							<!-- 9:30 Partido #2 -->
+                            <?php } ?>
+
+						</tbody>
+
+					</table>
+
+					<br>
+
+					<!-- Info abajo de la tabla -->
+					<div class="row">
+
+						<div class="col-12 col-sm-8">
+
+						</div>
+
+						<div class="d-none d-sm-block col-sm-4 text-center">
+
+							<img src="../img/logos/logoExliceos.png" alt="Logo exliceos" height="55">
+
+						</div>
+
+					</div>
+					
+				
+				</div>
+				
+				<!-- J8 -->
+				<div id="j8" class="container tab-pane fade"><br>
+					
+					<h3 class="display-6 px-5">Jornada 8</h3>
+					<h4 class="px-5"><?php echo htmlspecialchars($jornada8[0]['fecha']) ?></h4>
+					
+					<br>
+					<table class="table text-center" style="width: 97%; margin: auto;">
+
+						<!-- Body -->
+						<tbody>
+							
+							<tr class="bg-secondary text-white">
+								<th colspan="5" scope="col">Resultados</th>
+							</tr>
+
+                            <?php foreach($jornada8 as $j8){ ?>
+
 							<tr>
-								<td class="align-middle" style="width: 40%">Close Friends F.C.</td>	
-								<td class="align-middle">2</td> 		
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j8['eq1']) ?></td>	
+								<td class="align-middle"><?php echo htmlspecialchars($j8['res_eq1']) ?></td> 		
 								<td class="align-middle">vs.</td> 	
-								<td class="align-middle">3</td> 
-								<td class="align-middle" style="width: 40%">La Raza</td>
+								<td class="align-middle"><?php echo htmlspecialchars($j8['res_eq2']) ?></td> 
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j8['eq2']) ?></td>
 							</tr>
 
+                            <?php } ?>
+
+						</tbody>
+
+					</table>
+
+					<br>
+
+					<!-- Info abajo de la tabla -->
+					<div class="row">
+
+						<div class="col-12 col-sm-8">
+
+						</div>
+
+						<div class="d-none d-sm-block col-sm-4 text-center">
+
+							<img src="../img/logos/logoExliceos.png" alt="Logo exliceos" height="55">
+
+						</div>
+
+					</div>
+					
+				</div>
+				
+				<!-- J8 -->
+				<div id="j8" class="container tab-pane fade"><br>
+					
+					<h3 class="display-6 px-5">Jornada 8</h3>
+					<h4 class="px-5"><?php echo htmlspecialchars($jornada8[0]['fecha']) ?></h4>
+					
+					<br>
+					<table class="table text-center" style="width: 97%; margin: auto;">
+
+						<!-- Body -->
+						<tbody>
+							
+							<tr class="bg-secondary text-white">
+								<th colspan="5" scope="col">Resultados</th>
+							</tr>
+
+                            <?php foreach($jornada8 as $j8){ ?>
+
+							<tr>
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j8['eq1']) ?></td>	
+								<td class="align-middle"><?php echo htmlspecialchars($j8['res_eq1']) ?></td> 		
+								<td class="align-middle">vs.</td> 	
+								<td class="align-middle"><?php echo htmlspecialchars($j8['res_eq2']) ?></td> 
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j8['eq2']) ?></td>
+							</tr>
+
+                            <?php } ?>
+
+						</tbody>
+
+					</table>
+
+					<br>
+
+					<!-- Info abajo de la tabla -->
+					<div class="row">
+
+						<div class="col-12 col-sm-8">
+
+						</div>
+
+						<div class="d-none d-sm-block col-sm-4 text-center">
+
+							<img src="../img/logos/logoExliceos.png" alt="Logo exliceos" height="55">
+
+						</div>
+
+					</div>
+					
+				</div>
+				
+				<!-- J9 -->
+				<div id="j9" class="container tab-pane fade"><br>
+					
+					<h3 class="display-6 px-5">Jornada 9</h3>
+					<h4 class="px-5"><?php echo htmlspecialchars($jornada9[0]['fecha']) ?></h4>
+					
+					<br>
+					<table class="table text-center" style="width: 97%; margin: auto;">
+
+						<!-- Body -->
+						<tbody>
+							
+							<tr class="bg-secondary text-white">
+								<th colspan="5" scope="col">Resultados</th>
+							</tr>
+
+                            <?php foreach($jornada9 as $j9){ ?>
+
+							<tr>
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j9['eq1']) ?></td>	
+								<td class="align-middle"><?php echo htmlspecialchars($j9['res_eq1']) ?></td> 		
+								<td class="align-middle">vs.</td> 	
+								<td class="align-middle"><?php echo htmlspecialchars($j9['res_eq2']) ?></td> 
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j9['eq2']) ?></td>
+							</tr>
+
+                            <?php } ?>
+
+						</tbody>
+
+					</table>
+
+					<br>
+
+					<!-- Info abajo de la tabla -->
+					<div class="row">
+
+						<div class="col-12 col-sm-8">
+
+						</div>
+
+						<div class="d-none d-sm-block col-sm-4 text-center">
+
+							<img src="../img/logos/logoExliceos.png" alt="Logo exliceos" height="55">
+
+						</div>
+
+					</div>
+					
+				</div>
+
+                <!-- J10 -->
+				<div id="j10" class="container tab-pane fade"><br>
+					
+					<h3 class="display-6 px-5">Jornada 10</h3>
+					<h4 class="px-5"><?php echo htmlspecialchars($jornada10[0]['fecha']) ?></h4>
+					
+					<br>
+					<table class="table text-center" style="width: 97%; margin: auto;">
+
+						<!-- Body -->
+						<tbody>
+							
+							<tr class="bg-secondary text-white">
+								<th colspan="5" scope="col">Resultados</th>
+							</tr>
+
+                            <?php foreach($jornada10 as $j10){ ?>
+
+							<tr>
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j10['eq1']) ?></td>	
+								<td class="align-middle"><?php echo htmlspecialchars($j10['res_eq1']) ?></td> 		
+								<td class="align-middle">vs.</td> 	
+								<td class="align-middle"><?php echo htmlspecialchars($j10['res_eq2']) ?></td> 
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j10['eq2']) ?></td>
+							</tr>
+
+                            <?php } ?>
+
+						</tbody>
+
+					</table>
+
+					<br>
+
+					<!-- Info abajo de la tabla -->
+					<div class="row">
+
+						<div class="col-12 col-sm-8">
+
+						</div>
+
+						<div class="d-none d-sm-block col-sm-4 text-center">
+
+							<img src="../img/logos/logoExliceos.png" alt="Logo exliceos" height="55">
+
+						</div>
+
+					</div>
+					
+				</div>
+				
+				<!-- J11 -->
+				<div id="j11" class="container tab-pane fade"><br>
+					
+					<h3 class="display-6 px-5">Jornada 11</h3>
+					<h4 class="px-5"><?php echo htmlspecialchars($jornada11[0]['fecha']) ?></h4>
+					
+					<br>
+					<table class="table text-center" style="width: 97%; margin: auto;">
+
+						<!-- Body -->
+						<tbody>
+							
+							<tr class="bg-secondary text-white">
+								<th colspan="5" scope="col">Resultados</th>
+							</tr>
+
+                            <?php foreach($jornada11 as $j11){ ?>
+
+							<tr>
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j11['eq1']) ?></td>	
+								<td class="align-middle"><?php echo htmlspecialchars($j11['res_eq1']) ?></td> 		
+								<td class="align-middle">vs.</td> 	
+								<td class="align-middle"><?php echo htmlspecialchars($j11['res_eq2']) ?></td> 
+								<td class="align-middle" style="width: 40%"><?php echo htmlspecialchars($j11['eq2']) ?></td>
+							</tr>
+
+                            <?php } ?>
 
 						</tbody>
 

@@ -1,3 +1,22 @@
+<?php
+
+include "../conn.php";
+
+// write query for all rows
+$sqlGoleo = "SELECT * FROM goleo ORDER BY goles DESC";
+// make query and get result
+$resultGoleo = mysqli_query($conn, $sqlGoleo);
+// fetch the resulting rows as an array
+$goleo = mysqli_fetch_all($resultGoleo, MYSQLI_ASSOC);
+$rows = mysql_num_rows($resultGoleo);
+// free result from memory
+mysqli_free_result($resultGoleo);
+
+
+//print_r($tabla);
+
+?>
+
 <!doctype html>
 <html lang="en"><!-- InstanceBegin template="/Templates/template_principal.dwt" codeOutsideHTMLIsLocked="false" -->
 
@@ -5,7 +24,7 @@
 	<meta charset="UTF-8">
 	
 	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>Fotos</title>
+	<title>Goleo</title>
 	<!-- InstanceEndEditable -->
 	
 	<!-- Icon on top -->
@@ -40,11 +59,11 @@
 	</style>
 	
 	<!-- InstanceBeginEditable name="head" -->
-	
+	<script type="text/javascript" src="../js/goleo.js"></script>
 	<!-- InstanceEndEditable -->
 </head>
 
-<body style="background-color: #D4D8DC">
+<body style="background-color: #D4D8DC" onload="cardGoleador()">
 	
 	<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
 		<div class="container-fluid">
@@ -74,10 +93,10 @@
 								<li><h5 class="dropdown-header">Temporada Ene-Jun '22</h5></li>
 								<li><a class="dropdown-item border-bottom" href="../index_torneo.html"><strong>Inicio</strong></a></li>
 								<li><a class="dropdown-item border-bottom" href="tabla.php">Tabla general</a></li>
-								<li><a class="dropdown-item border-bottom" href="goleo.php">Goleo</a></li>
+								<li><a class="dropdown-item border-bottom active" href="goleo.php">Goleo</a></li>
 								<li><a class="dropdown-item border-bottom" href="tarjetas.php">Tarjetas</a></li>
 								<li><a class="dropdown-item border-bottom" href="jornadas.php">Jornadas</a></li>
-								<li><a class="dropdown-item active" href="fotos.html">Fotos</a></li>
+								<li><a class="dropdown-item" href="fotos.html">Fotos</a></li>
 							</ul>
 							<!-- InstanceEndEditable -->
 						</li>
@@ -105,42 +124,112 @@
 		
 		<div class="container pt-4">
 			
-			<!-- breadcrumbs -->
+			<!-- breadcrumb -->
 			<ul class="breadcrumb">
 				<li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
 				<li class="breadcrumb-item"><a href="../index_torneo.html">Torneo</a></li>
-				<li class="breadcrumb-item active">Fotos</li>
+				<li class="breadcrumb-item active">Goleo</li>
 			</ul>
 			
 			<!-- Titulo y fecha -->
 			<div class="p-3">
-				<h2 class="display-4"><strong>Fotos <i class="fas fa-camera"></i></strong></h2> 
-				<h2 class="display-6">Temporada Ene-Jun 2022</h2>
-			</div>  
-
-			<div class="card text-center">
+				<h2 class="display-4"><strong>Goleo</strong></h2>
+				<!--<h2 class="display-6">Jornada <span id="jornadaTitulo">5</span> <i class="far fa-calendar-alt"></i></h2>-->
+			</div>
+			
+			<!-- Tarjeta Goleador -->
+			<div class="card mx-auto" style="width:90%; max-width: 540px;">
+				<!-- Head -->
+				<div class="card-header bg-warning">
+					<big><strong>Líder de goleo <i class="fas fa-medal"></i></strong></big>
+				</div>
 				
-				<div class="row p-4">
-				
-					<div class="col-12">
-					
-						<h2 class="display-5"><big>Conoce nuestro instagram</big></h2>
-						<p>Síguenos en nuestra página oficial de instagram.</p>
-						
+				<div class="row">
+					<!-- Camisa -->
+					<div class="d-none d-sm-block col-sm-6">
+						<img src="../img/camisas/cerounos.png" class="img-fluid p-3 mx-auto d-block" style="max-height: 168px" alt="camisa goleador" id="camisaCard">
 					</div>
 					
-					<div class="col-12">
+					<!-- Texto -->
+					<div class="col-12 col-sm-6">
+						<div class="card-body">
+							<h3 class="card-title text-center"><strong><big><span id="nombreCard">Nombre del goleador</span></big></strong></h3>
+							<p class="card-text text-center"><em><span id="equipoCard">Equipo</span></em></p>
+							<p class="card-text text-center"><span id="golesCard">X</span> goles.</p>
+						</div>
+					</div>
 					
-						<iframe width="90%" height="430" class="border" src="https://www.instagram.com/p/CYmuqJEvdd0/embed"></iframe>
+				</div>
+			</div>
+			
+			
+			<!-- Tabla -->
+			<div class="card py-3 mt-4">
+				
+				<br>
+				<table class="table table-striped text-center" style="width: 90%; margin: auto;">
+					
+					<!-- Heading -->
+					<thead>
+						<tr class="bg-secondary text-white">
+							<th scope="col">Jugador</th>
+							<th scope="col">Equipo</th>
+							<th scope="col">Goles</th>
+						</tr>
+					</thead>
+					
+					<!-- Body -->
+					<tbody>
+						
+						<!-- Posiciones -->
+                        <?php 
+
+                        $primerLugar = true;
+                        
+                        foreach($goleo as $anotador) { 
+
+                            if ($primerLugar) { ?>
+                                
+                                <tr>
+                                    <td id="nombreTabla"><?php echo htmlspecialchars($anotador['jugador']) ?></td>	    <!-- Jugador -->
+                                    <td id="equipoTabla"><?php echo htmlspecialchars($anotador['nom_equipo']) ?></td> 	<!-- Equipo -->
+                                    <td id="golesTabla"><?php echo htmlspecialchars($anotador['goles']) ?></td> 		<!-- Goles -->
+                                </tr>
+                                <?php $primerLugar = false; ?>
+
+                            <?php } else { ?>
+                                
+                                <tr>
+                                    <td><?php echo htmlspecialchars($anotador['jugador']) ?></td>	    <!-- Jugador -->
+                                    <td><?php echo htmlspecialchars($anotador['nom_equipo']) ?></td> 	<!-- Equipo -->
+                                    <td><?php echo htmlspecialchars($anotador['goles']) ?></td> 		<!-- Goles -->
+                                </tr>
+
+                            <?php } ?>
+
+                        <?php } ?>
+						
+					</tbody>
+				</table>
+				
+				<br>
+				
+				<!-- Info abajo de la tabla -->
+				<div class="row">
+					
+					<div class="col-12 col-sm-8">
+
+					</div>
+					
+					<div class="d-none d-sm-block col-sm-4 text-center">
+						
+						<img src="../img/logos/logoExliceos.png" alt="Logo exliceos" height="55">
 						
 					</div>
 					
 				</div>
 				
 			</div>
-			
-						
-
 			
 		</div>  
 		
@@ -181,3 +270,10 @@
 	
 </body>
 <!-- InstanceEnd --></html>
+
+<?php
+
+// close connection
+mysqli_close($conn);
+
+?>

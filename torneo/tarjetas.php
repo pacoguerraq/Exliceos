@@ -1,3 +1,18 @@
+<?php
+
+include "../conn.php";
+
+// write query for all rows
+$sqlTarjetas = "SELECT * FROM tarjetas ORDER BY jorOut";
+// make query and get result
+$resultTarjetas = mysqli_query($conn, $sqlTarjetas);
+// fetch the resulting rows as an array
+$tarjetas = mysqli_fetch_all($resultTarjetas, MYSQLI_ASSOC);
+// free result from memory
+mysqli_free_result($resultTarjetas);
+
+?>
+
 <!doctype html>
 <html lang="en"><!-- InstanceBegin template="/Templates/template_principal.dwt" codeOutsideHTMLIsLocked="false" -->
 
@@ -115,7 +130,7 @@
 			<!-- Titulo y fecha -->
 			<div class="p-3">
 				<h2 class="display-4"><strong>Tarjetas</strong></h2>
-				<h2 class="display-6">Jornada 5 <i class="far fa-calendar-alt"></i></h2>
+				<!--<h2 class="display-6">Jornada 5 <i class="far fa-calendar-alt"></i></h2>-->
 			</div>  
 			
 			
@@ -138,38 +153,18 @@
 					
 					<!-- Body -->
 					<tbody>
-						
-						<!-- Jugador -->
-						<tr>
-							<td>Javier Brenes</td> 		<!-- Jugador -->
-							<td>Gol Osos</td> 				<!-- Equipo -->
-							<td>J2</td> 					<!-- EXP -->
-							<td>J3</td> 					<!-- OUT -->
-						</tr>
-						
-						<!-- Jugador -->
-						<tr>
-							<td>Enrique Ayala</td> 		<!-- Jugador -->
-							<td>Gol Osos</td> 				<!-- Equipo -->
-							<td>J3</td> 					<!-- EXP -->
-							<td>J4</td> 					<!-- OUT -->
-						</tr>
-						
-						<!-- Jugador -->
-						<tr>
-							<td>Pablo García</td> 		<!-- Jugador -->
-							<td>Gol Osos</td> 				<!-- Equipo -->
-							<td>J3</td> 					<!-- EXP -->
-							<td>J4</td> 					<!-- OUT -->
-						</tr>
-						
-						<!-- Jugador -->
-						<tr>
-							<td>Jorge Jadra</td> 		<!-- Jugador -->
-							<td>Galácticos</td> 				<!-- Equipo -->
-							<td>J3</td> 					<!-- EXP -->
-							<td>J4</td> 					<!-- OUT -->
-						</tr>
+
+                        <!-- Lista expulsados -->
+                        <?php foreach($tarjetas as $expulsado){ ?>
+
+                        <tr>
+                            <td><?php echo htmlspecialchars($expulsado['jugador']) ?></td>	    <!-- Jugador -->
+                            <td><?php echo htmlspecialchars($expulsado['equipo']) ?></td> 	<!-- Equipo -->
+                            <td><?php echo htmlspecialchars($expulsado['jorExp']) ?></td> 		<!-- exp -->
+                            <td><?php echo htmlspecialchars($expulsado['jorOut']) ?></td> 		<!-- out -->
+                        </tr>
+
+                        <?php } ?>
 						
 					</tbody>
 				</table>

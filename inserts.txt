@@ -1,0 +1,62 @@
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (5, '1a', 'equipo 1', 'equipo 2', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (5, '1b', 'equipo 3', 'equipo 4', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (5, '2a', 'equipo 5', 'equipo 6', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (5, '2b', 'equipo 7', 'equipo 8', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (5, '3a', 'equipo 9', 'equipo 10', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (5, '3b', 'equipo 11', 'equipo 12', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (6, '1a', 'equipo 1', 'equipo 2', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (6, '1b', 'equipo 3', 'equipo 4', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (6, '2a', 'equipo 5', 'equipo 6', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (6, '2b', 'equipo 7', 'equipo 8', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (6, '3a', 'equipo 9', 'equipo 10', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (6, '3b', 'equipo 11', 'equipo 12', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (7, '1a', 'equipo 1', 'equipo 2', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (7, '1b', 'equipo 3', 'equipo 4', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (7, '2a', 'equipo 5', 'equipo 6', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (7, '2b', 'equipo 7', 'equipo 8', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (7, '3a', 'equipo 9', 'equipo 10', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (7, '3b', 'equipo 11', 'equipo 12', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (8, '1a', 'equipo 1', 'equipo 2', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (8, '1b', 'equipo 3', 'equipo 4', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (8, '2a', 'equipo 5', 'equipo 6', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (8, '2b', 'equipo 7', 'equipo 8', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (8, '3a', 'equipo 9', 'equipo 10', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (8, '3b', 'equipo 11', 'equipo 12', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (9, '1a', 'equipo 1', 'equipo 2', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (9, '1b', 'equipo 3', 'equipo 4', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (9, '2a', 'equipo 5', 'equipo 6', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (9, '2b', 'equipo 7', 'equipo 8', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (9, '3a', 'equipo 9', 'equipo 10', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (9, '3b', 'equipo 11', 'equipo 12', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (10, '1a', 'equipo 1', 'equipo 2', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (10, '1b', 'equipo 3', 'equipo 4', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (10, '2a', 'equipo 5', 'equipo 6', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (10, '2b', 'equipo 7', 'equipo 8', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (10, '3a', 'equipo 9', 'equipo 10', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (10, '3b', 'equipo 11', 'equipo 12', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (11, '1a', 'equipo 1', 'equipo 2', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (11, '1b', 'equipo 3', 'equipo 4', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (11, '2a', 'equipo 5', 'equipo 6', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (11, '2b', 'equipo 7', 'equipo 8', '-', '-', 'xx/xx/2022');
+
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (11, '3a', 'equipo 9', 'equipo 10', '-', '-', 'xx/xx/2022');
+INSERT INTO `jornadas`(`jornada`, `ident`, `eq1`, `eq2`, `res_eq1`, `res_eq2`, `fecha`) VALUES (11, '3b', 'equipo 11', 'equipo 12', '-', '-', 'xx/xx/2022');

@@ -73,10 +73,10 @@
 							<ul class="dropdown-menu dropdown-menu-end text-center">
 								<li><h5 class="dropdown-header">Temporada Ene-Jun '22</h5></li>
 								<li><a class="dropdown-item border-bottom" href="../index_torneo.html"><strong>Inicio</strong></a></li>
-								<li><a class="dropdown-item border-bottom" href="../torneo/tabla.html">Tabla general</a></li>
-								<li><a class="dropdown-item border-bottom" href="../torneo/goleo.html">Goleo</a></li>
-								<li><a class="dropdown-item border-bottom" href="../torneo/tarjetas.html">Tarjetas</a></li>
-								<li><a class="dropdown-item border-bottom" href="../torneo/jornadas.html">Jornadas</a></li>
+								<li><a class="dropdown-item border-bottom" href="../torneo/tabla.php">Tabla general</a></li>
+								<li><a class="dropdown-item border-bottom" href="../torneo/goleo.php">Goleo</a></li>
+								<li><a class="dropdown-item border-bottom" href="../torneo/tarjetas.php">Tarjetas</a></li>
+								<li><a class="dropdown-item border-bottom" href="../torneo/jornadas.php">Jornadas</a></li>
 								<li><a class="dropdown-item" href="../torneo/fotos.html">Fotos</a></li>
 							</ul>
 							<!-- TemplateEndEditable -->
